@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PL BUNDLES — The Funhouse</title>
+<meta name="description" content="PL BUNDLES — The Funhouse. Where good hair is the main attraction. Natural Wavy, PLB V-Wavy and MC Burmese bundle deals, 20–30 inches. Baltimore pickup or delivery.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bodoni+Moda:ital,opsz,wght@1,6..96,400;1,6..96,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* =========================================================
+   PL BUNDLES — THE FUNHOUSE
+   ========================================================= */
+:root{
+  --red:#A50916; --red-deep:#7d0610; --ivory:#F5F0E7; --ivory-2:#ece4d6; --black:#181818; --ink:#0f0f0f;
+  --gold:#D6AA62; --gold-soft:#e8cf9f; --blue:#3448BB; --pink:#E7B3C1;
+  --display:"Abril Fatface", "Bodoni Moda", Georgia, serif;
+  --serif:"Bodoni Moda", Georgia, serif;
+  --sans:"Jost", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --maxw:1240px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--ivory);color:var(--black);font-family:var(--sans);font-size:17px;line-height:1.6;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.eyebrow{font:500 12px/1.2 var(--sans);letter-spacing:.32em;text-transform:uppercase;color:var(--red)}
+.display{font-family:var(--display);font-weight:400;line-height:.95;letter-spacing:.01em;margin:0}
+.tagline{font-family:var(--serif);font-style:italic;font-weight:400}
+.skip-link{position:absolute;left:12px;top:-60px;background:var(--black);color:var(--ivory);padding:10px 16px;z-index:200;text-decoration:none}
+.skip-link:focus{top:12px}
+
+/* ---------- Curtain ---------- */
+.curtain{position:fixed;inset:0;z-index:150;display:flex;pointer-events:auto}
+.curtain[hidden]{display:none}
+.curtain__panel{flex:1;height:100%;position:relative;
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.35), transparent 18%, transparent 80%, rgba(0,0,0,.45)),
+    repeating-linear-gradient(90deg, #5e040b 0, #8f0713 3.5%, #b40a19 6%, #8f0713 8.5%, #5e040b 12%);
+  transition:transform 1.3s cubic-bezier(.7,0,.2,1);will-change:transform}
+.curtain__panel--l{box-shadow:inset -18px 0 30px rgba(0,0,0,.45)}
+.curtain__panel--r{box-shadow:inset 18px 0 30px rgba(0,0,0,.45)}
+.curtain__panel::after{content:"";position:absolute;left:0;right:0;bottom:0;height:28px;
+  background:repeating-linear-gradient(90deg,var(--gold) 0 10px, #b88a45 10px 12px);opacity:.9}
+.curtain__valance{position:absolute;top:0;left:0;right:0;height:70px;z-index:2;
+  background:radial-gradient(60px 46px at 50% 0, #8f0713 98%, transparent 100%) 0 0/120px 70px repeat-x, #5e040b;
+  border-bottom:3px solid var(--gold);transition:transform 1s .25s var(--ease)}
+.curtain__mark{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:3;text-align:center;color:var(--ivory);transition:opacity .4s}
+.curtain__mark .display{font-size:clamp(40px,8vw,88px);color:var(--ivory);text-shadow:0 4px 30px rgba(0,0,0,.4)}
+.curtain__mark .tagline{color:var(--gold-soft);font-size:18px;margin-top:10px}
+.curtain__skip{position:absolute;right:20px;bottom:44px;z-index:4;background:rgba(24,24,24,.6);color:var(--ivory);border:1px solid rgba(214,170,98,.7);padding:10px 18px;font:500 12px var(--sans);letter-spacing:.24em;text-transform:uppercase;cursor:pointer}
+.curtain.open .curtain__panel--l{transform:translateX(-101%)}
+.curtain.open .curtain__panel--r{transform:translateX(101%)}
+.curtain.open .curtain__valance{transform:translateY(-100%)}
+.curtain.open .curtain__mark,.curtain.open .curtain__skip{opacity:0}
+
+/* ---------- Nav ---------- */
+.nav{position:sticky;top:0;z-index:60;background:rgba(24,24,24,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:var(--ivory);border-bottom:1px solid rgba(214,170,98,.35)}
+.nav__in{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{font-family:var(--display);font-size:24px;letter-spacing:.04em;text-decoration:none;color:var(--ivory)}
+.brand span{color:var(--gold)}
+.nav__links{display:flex;gap:30px;list-style:none;margin:0;padding:0;align-items:center}
+.nav__links a{text-decoration:none;font:500 12.5px var(--sans);letter-spacing:.2em;text-transform:uppercase;opacity:.86;padding:6px 0;border-bottom:1px solid transparent;transition:opacity .2s,border-color .2s}
+.nav__links a:hover{opacity:1;border-color:var(--gold)}
+.nav__order{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--gold)!important;padding:9px 16px!important;color:var(--gold)}
+.nav__order svg{width:16px;height:16px}
+.nav__toggle{display:none;background:none;border:0;color:var(--ivory);width:48px;height:48px;cursor:pointer;margin-right:-10px}
+.nav__toggle span{display:block;width:24px;height:1.5px;background:currentColor;margin:6px auto;transition:transform .3s,opacity .3s}
+.nav.open .nav__toggle span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.nav.open .nav__toggle span:nth-child(2){opacity:0}
+.nav.open .nav__toggle span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+@media (max-width:900px){
+  .nav__toggle{display:block}
+  .nav__links{position:absolute;top:68px;left:0;right:0;flex-direction:column;gap:0;background:var(--black);border-bottom:1px solid rgba(214,170,98,.35);padding:8px 24px 22px;display:none;align-items:stretch}
+  .nav.open .nav__links{display:flex}
+  .nav__links li{border-bottom:1px solid rgba(245,240,231,.08)}
+  .nav__links a{display:block;padding:17px 0;font-size:14px}
+  .nav__order{justify-content:center;margin-top:16px}
+  .nav__links li:last-child{border:0}
+}
+
+/* ---------- Ticket buttons ---------- */
+.ticket{display:inline-block;text-decoration:none;cursor:pointer;border:0;background:none;padding:0;transition:transform .28s var(--ease),filter .28s var(--ease)}
+.ticket__face{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:56px;padding:14px 38px;background:var(--red);color:var(--ivory);
+  font:600 13px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;
+  -webkit-mask:radial-gradient(circle 10px at 0 50%,#0000 97%,#000) left/51% 100% no-repeat,radial-gradient(circle 10px at 100% 50%,#0000 97%,#000) right/51% 100% no-repeat;
+          mask:radial-gradient(circle 10px at 0 50%,#0000 97%,#000) left/51% 100% no-repeat,radial-gradient(circle 10px at 100% 50%,#0000 97%,#000) right/51% 100% no-repeat}
+.ticket__face::before{content:"";position:absolute;inset:5px 16px;border:1px dashed rgba(245,240,231,.45);pointer-events:none;transition:border-color .28s}
+.ticket__face small{font:500 9.5px/1 var(--sans);letter-spacing:.28em;color:var(--gold-soft)}
+.ticket:hover{transform:translateY(-3px);filter:drop-shadow(0 10px 14px rgba(0,0,0,.28))}
+.ticket:hover .ticket__face::before{border-color:var(--gold)}
+.ticket--gold .ticket__face{background:var(--gold);color:var(--black)}
+.ticket--gold .ticket__face::before{border-color:rgba(24,24,24,.35)}
+.ticket--gold .ticket__face small{color:var(--red-deep)}
+.ticket[disabled]{opacity:.55;cursor:not-allowed;transform:none;filter:none}
+.btn-line{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border:1px solid currentColor;background:transparent;text-decoration:none;cursor:pointer;
+  font:500 12.5px var(--sans);letter-spacing:.24em;text-transform:uppercase;transition:background .25s,color .25s}
+.btn-line:hover{background:var(--ivory);color:var(--black)}
+.btn-line--dark:hover{background:var(--black);color:var(--ivory)}
+
+/* ---------- Hero ---------- */
+.hero{background:var(--ink);color:var(--ivory);position:relative;overflow:hidden}
+.hero__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);min-height:calc(100vh - 68px);max-height:980px}
+.hero__copy{display:flex;flex-direction:column;justify-content:center;padding:64px 56px 64px max(24px,calc((100vw - var(--maxw))/2 + 24px));position:relative}
+.hero__copy::before{content:"";position:absolute;inset:0;background:radial-gradient(70% 60% at 30% 40%, rgba(165,9,22,.28), transparent 70%);pointer-events:none}
+.marquee-frame{position:relative;padding:34px 34px 30px;border:1px solid rgba(214,170,98,.55);align-self:flex-start;max-width:560px}
+.bulbs{position:absolute;inset:-7px;pointer-events:none}
+.bulb{position:absolute;width:7px;height:7px;margin:-3.5px 0 0 -3.5px;border-radius:50%;background:var(--gold);opacity:.4;box-shadow:0 0 0 rgba(214,170,98,0);animation:bulb 4.2s ease-in-out infinite}
+@keyframes bulb{0%,100%{opacity:.38;box-shadow:0 0 0 rgba(214,170,98,0)}12%{opacity:1;box-shadow:0 0 10px 2px rgba(232,207,159,.75)}28%{opacity:.5}}
+.hero h1{margin:0}
+.hero h1 .display{display:block}
+.hero__brand{font-size:clamp(54px,7.4vw,108px);color:var(--ivory)}
+.hero__sub{font-size:clamp(26px,3.2vw,44px);color:var(--gold);letter-spacing:.14em;margin-top:10px}
+.hero .tagline{font-size:clamp(19px,1.9vw,24px);color:var(--ivory-2);margin:22px 0 0}
+.hero__ctas{display:flex;flex-wrap:wrap;gap:18px;margin-top:38px;align-items:center;position:relative}
+.hero__media{position:relative;background:#120d0c;display:flex;align-items:center;justify-content:center}
+.hero__media img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.hero__media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg, var(--ink) 0, rgba(15,15,15,0) 12%);pointer-events:none}
+.hero__facts{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:40px;font:500 11.5px var(--sans);letter-spacing:.22em;text-transform:uppercase;color:rgba(245,240,231,.7);position:relative}
+.hero__facts span::before{content:"✦";color:var(--gold);margin-right:8px}
+@media (max-width:900px){
+  .hero__grid{grid-template-columns:1fr;min-height:0;max-height:none}
+  .hero__media{order:-1}
+  .hero__media img{height:auto;aspect-ratio:1320/1644;object-fit:cover}
+  .hero__media::after{background:linear-gradient(0deg, var(--ink) 0, rgba(15,15,15,0) 14%)}
+  .hero__copy{padding:28px 24px 56px}
+  .marquee-frame{padding:28px 22px 24px;align-self:stretch}
+  .hero__ctas{flex-direction:column;align-items:stretch}
+  .hero__ctas .ticket__face{width:100%}
+}
+
+/* ---------- Scrolling strip ---------- */
+.strip{background:var(--red);color:var(--ivory);overflow:hidden;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold)}
+.strip__track{display:flex;width:max-content;animation:strip 48s linear infinite}
+.strip:hover .strip__track{animation-play-state:paused}
+.strip__item{white-space:nowrap;padding:16px 0;font:500 14px var(--sans);letter-spacing:.32em;text-transform:uppercase}
+.strip__item b{color:var(--gold);font-weight:400;margin:0 22px}
+@keyframes strip{to{transform:translateX(-50%)}}
+
+/* ---------- Sections ---------- */
+section{scroll-margin-top:72px}
+.sec{padding:110px 0}
+.sec-head{text-align:center;max-width:760px;margin:0 auto 60px}
+.sec-head .display{font-size:clamp(44px,6.4vw,86px)}
+.sec-head .tagline{font-size:clamp(19px,2vw,24px);margin:16px 0 0;color:#4a4440}
+.rule{display:flex;align-items:center;gap:14px;justify-content:center;margin:0 0 20px}
+.rule::before,.rule::after{content:"";height:1px;width:44px;background:var(--gold)}
+@media (max-width:700px){.sec{padding:76px 0}.sec-head{margin-bottom:40px}}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+/* ---------- Shop ---------- */
+.shop{background:var(--ivory)}
+.shop__grid{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:stretch}
+.shop__photo{position:relative;min-height:520px;overflow:hidden;background:#ddd}
+.shop__photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 22%}
+.shop__photo figcaption{position:absolute;left:0;right:0;bottom:0;padding:22px;background:linear-gradient(0deg,rgba(15,15,15,.8),transparent);color:var(--ivory);font:500 11.5px var(--sans);letter-spacing:.26em;text-transform:uppercase}
+.deal{position:relative;background:#fbf8f2;border:1px solid #e0d6c4;padding:40px 32px 32px;display:flex;flex-direction:column;transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .35s}
+.deal::before{content:"";position:absolute;inset:8px;border:1px solid rgba(214,170,98,.45);pointer-events:none}
+.deal:hover{transform:translateY(-6px);box-shadow:0 26px 50px -24px rgba(24,24,24,.35);border-color:var(--gold)}
+.deal__qty{font-family:var(--display);font-size:clamp(76px,8vw,110px);line-height:.85;color:var(--red)}
+.deal__name{font-family:var(--display);font-size:30px;letter-spacing:.06em;margin:6px 0 2px}
+.deal__len{font:500 12px var(--sans);letter-spacing:.22em;text-transform:uppercase;color:#6b625a}
+.deal__from{margin:22px 0 18px;font-family:var(--serif);font-style:italic;font-size:19px}
+.deal__from strong{font-family:var(--sans);font-style:normal;font-weight:600;font-size:30px;color:var(--black);margin-left:6px}
+.deal__prices{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 22px;padding:0;list-style:none}
+.deal__prices button{width:100%;background:transparent;border:1px solid #d9cdb8;padding:10px 4px;cursor:pointer;line-height:1.2;transition:border-color .2s,background .2s}
+.deal__prices button:hover{border-color:var(--red);background:#fff}
+.deal__prices b{display:block;font:600 15px var(--sans)}
+.deal__prices span{font-size:13.5px;color:#5c544c}
+.deal__tex-label{font:500 11px var(--sans);letter-spacing:.24em;text-transform:uppercase;color:#6b625a;margin-bottom:8px}
+.deal__tex{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:26px}
+.chip{border:1px solid #cfc2ab;background:transparent;padding:8px 12px;font:500 12.5px var(--sans);letter-spacing:.06em;cursor:pointer;transition:all .2s}
+.chip[aria-pressed="true"]{background:var(--black);color:var(--ivory);border-color:var(--black)}
+.chip:hover{border-color:var(--black)}
+.deal .ticket{margin-top:auto;align-self:stretch}
+.deal .ticket__face{width:100%}
+@media (max-width:1020px){.shop__grid{grid-template-columns:1fr 1fr}.shop__photo{grid-column:1/-1;min-height:0;aspect-ratio:4/3}.shop__photo img{object-position:50% 18%}}
+@media (max-width:640px){.shop__grid{grid-template-columns:1fr}.shop__photo{aspect-ratio:4/5}}
+
+/* ---------- Builder ---------- */
+.builder{background:var(--black);color:var(--ivory);position:relative}
+.builder .sec-head .tagline{color:var(--ivory-2)}
+.builder .eyebrow{color:var(--gold)}
+.acts{display:flex;gap:4px;list-style:none;margin:0 0 28px;padding:0;counter-reset:act;overflow-x:auto;scrollbar-width:none}
+.acts::-webkit-scrollbar{display:none}
+.acts button{flex:1;min-width:104px;background:transparent;border:0;border-top:2px solid rgba(245,240,231,.16);color:rgba(245,240,231,.55);padding:12px 4px 4px;text-align:left;cursor:pointer;font:500 11.5px var(--sans);letter-spacing:.18em;text-transform:uppercase;transition:color .3s,border-color .3s}
+.acts button small{display:block;font-family:var(--serif);font-style:italic;text-transform:none;letter-spacing:0;font-size:13px;color:var(--gold);opacity:.8}
+.acts button[aria-current="step"]{color:var(--ivory);border-color:var(--gold)}
+.acts button.done{color:var(--ivory-2);border-color:var(--red)}
+.acts button:disabled{cursor:default}
+.builder__grid{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:36px;align-items:start}
+.stage{background:var(--ivory);color:var(--black);padding:44px 44px 36px;position:relative;min-height:460px}
+.stage::before{content:"";position:absolute;inset:8px;border:1px solid rgba(214,170,98,.55);pointer-events:none}
+.step{display:none}
+.step.active{display:block;animation:stepIn .5s var(--ease)}
+@keyframes stepIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.step h3{font-family:var(--display);font-weight:400;font-size:clamp(30px,3.4vw,42px);margin:0 0 6px;line-height:1}
+.step .lead{font-family:var(--serif);font-style:italic;color:#5c544c;margin:0 0 26px;font-size:18px}
+.opts{display:grid;gap:14px}
+.opts--3{grid-template-columns:repeat(3,1fr)}
+.opts--2{grid-template-columns:repeat(2,1fr)}
+.opts--len{grid-template-columns:repeat(3,1fr)}
+.opt{position:relative;text-align:left;background:#fbf8f2;border:1px solid #d9cdb8;padding:22px 20px;cursor:pointer;min-height:96px;transition:border-color .25s,background .25s,transform .25s var(--ease),box-shadow .25s}
+.opt:hover:not(:disabled){border-color:var(--black);transform:translateY(-2px)}
+.opt[aria-checked="true"]{border-color:var(--red);background:#fff;box-shadow:inset 0 0 0 1px var(--red),0 14px 30px -18px rgba(165,9,22,.55)}
+.opt[aria-checked="true"]::after{content:"";position:absolute;top:12px;right:12px;width:20px;height:20px;border-radius:50%;background:var(--red) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5.5 10.5l3 3 6-7' fill='none' stroke='%23F5F0E7' stroke-width='2'/%3E%3C/svg%3E") center/100% no-repeat}
+.opt:disabled{opacity:.45;cursor:not-allowed}
+.opt__k{display:block;font:500 10.5px var(--sans);letter-spacing:.26em;text-transform:uppercase;color:#8a7f73;margin-bottom:10px}
+.opt__t{display:block;font-family:var(--display);font-size:26px;line-height:1.05}
+.opt__s{display:block;margin-top:8px;font-size:14.5px;color:#5c544c}
+.opt__p{display:block;margin-top:8px;font:600 20px var(--sans)}
+.opt--tex .opt__t{font-size:28px}
+.opt--tex .opt__mono{position:absolute;right:18px;bottom:8px;font-family:var(--display);font-size:56px;line-height:1;color:rgba(165,9,22,.08);pointer-events:none}
+.note{margin-top:20px;padding:16px 18px;background:#f0e8da;border-left:3px solid var(--gold);font-size:15px}
+.note strong{font-weight:600}
+.breakdown{margin:12px 0 0;display:grid;grid-template-columns:1fr auto;gap:6px 18px;font-size:15px}
+.breakdown dt{color:#5c544c}
+.breakdown dd{margin:0;font-weight:600;text-align:right}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:16px 18px;margin-top:22px}
+.fields .full{grid-column:1/-1}
+.field label{display:block;font:500 11.5px var(--sans);letter-spacing:.2em;text-transform:uppercase;margin-bottom:7px;color:#3f3934}
+.field label em{font-style:normal;text-transform:none;letter-spacing:0;color:#8a7f73;font-size:13px}
+.field input,.field select,.field textarea{width:100%;background:#fff;border:1px solid #cfc2ab;padding:14px 14px;font-size:16px;border-radius:0;transition:border-color .2s,box-shadow .2s;-webkit-appearance:none;appearance:none}
+.field textarea{min-height:110px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--black);box-shadow:0 0 0 3px rgba(214,170,98,.35)}
+.field.err input,.field.err select,.field.err textarea{border-color:var(--red)}
+.field .msg{display:none;color:var(--red);font-size:13.5px;margin-top:6px}
+.field.err .msg{display:block}
+.step-err{display:none;color:var(--red);font-size:14.5px;margin-top:16px;font-weight:500}
+.step-err.show{display:block}
+.step-nav{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:34px;padding-top:24px;border-top:1px solid #e0d6c4}
+.step-nav .back{background:none;border:0;cursor:pointer;font:500 12.5px var(--sans);letter-spacing:.22em;text-transform:uppercase;padding:14px 4px;color:#3f3934}
+.step-nav .back:disabled{visibility:hidden}
+.review{display:grid;grid-template-columns:1fr;gap:0;border-top:1px solid #e0d6c4}
+.review__row{display:grid;grid-template-columns:150px 1fr auto;gap:14px;padding:14px 0;border-bottom:1px solid #e0d6c4;align-items:baseline;font-size:15.5px}
+.review__row dt{font:500 11px var(--sans);letter-spacing:.2em;text-transform:uppercase;color:#8a7f73}
+.review__row dd{margin:0;overflow-wrap:anywhere}
+.review__row button{background:none;border:0;padding:0;font:500 12px var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--red);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.fine{font-size:13.5px;color:#6b625a;margin-top:18px}
+
+/* Summary */
+.summary{position:sticky;top:96px;border:1px solid rgba(214,170,98,.5);padding:30px 28px;background:linear-gradient(180deg,#1f1b1a,#151313)}
+.summary h4{font-family:var(--display);font-weight:400;font-size:26px;margin:0 0 4px;letter-spacing:.04em}
+.summary .eyebrow{color:var(--gold);margin-bottom:18px;display:block}
+.sum-list{margin:0;padding:0;list-style:none}
+.sum-list li{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px dashed rgba(245,240,231,.14);font-size:15px}
+.sum-list li span:first-child{color:rgba(245,240,231,.6)}
+.sum-list li span:last-child{text-align:right}
+.sum-total{display:flex;justify-content:space-between;align-items:baseline;margin-top:20px}
+.sum-total span{font:500 11.5px var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.sum-total strong{font:600 34px var(--sans);transition:color .3s}
+.sum-total strong.bump{animation:bump .5s var(--ease)}
+@keyframes bump{0%{transform:scale(1)}40%{transform:scale(1.06);color:var(--gold)}100%{transform:scale(1)}}
+.sum-extra{font-size:14px;color:rgba(245,240,231,.72);margin-top:12px}
+.sum-extra div{display:flex;justify-content:space-between;gap:12px;padding:4px 0}
+.sum-note{font-size:13px;color:rgba(245,240,231,.55);margin-top:18px;line-height:1.5}
+.mobile-sum{display:none}
+@media (max-width:1020px){
+  .builder__grid{grid-template-columns:1fr}
+  .summary{display:none}
+  .mobile-sum{display:block;position:sticky;top:68px;z-index:20;margin:0 -24px 18px;background:#151313;border-bottom:1px solid rgba(214,170,98,.45)}
+  .mobile-sum > button{width:100%;display:flex;justify-content:space-between;align-items:center;background:none;border:0;color:var(--ivory);padding:14px 24px;cursor:pointer}
+  .mobile-sum > button span{font:500 11px var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+  .mobile-sum > button strong{font:600 20px var(--sans)}
+  .mobile-sum > button i{font-style:normal;margin-left:8px;display:inline-block;transition:transform .3s}
+  .mobile-sum.open > button i{transform:rotate(180deg)}
+  .mobile-sum__body{display:none;padding:0 24px 18px}
+  .mobile-sum.open .mobile-sum__body{display:block}
+}
+@media (max-width:700px){
+  .stage{padding:30px 20px 24px;margin:0 -8px}
+  .opts--3,.opts--2{grid-template-columns:1fr}
+  .opts--len{grid-template-columns:repeat(2,1fr)}
+  .fields{grid-template-columns:1fr}
+  .review__row{grid-template-columns:1fr auto}
+  .review__row dt{grid-column:1/-1;margin-bottom:-8px}
+  .acts button{min-width:88px}
+  .step-nav .ticket{flex:1}
+  .step-nav .ticket__face{width:100%;padding:14px 18px}
+}
+
+/* Confirmation */
+.confirm{text-align:center;padding:10px 0}
+.confirm__ticket{display:inline-flex;align-items:center;gap:16px;background:var(--red);color:var(--ivory);padding:14px 30px;margin:6px auto 22px;
+  -webkit-mask:radial-gradient(circle 10px at 0 50%,#0000 97%,#000) left/51% 100% no-repeat,radial-gradient(circle 10px at 100% 50%,#0000 97%,#000) right/51% 100% no-repeat;
+          mask:radial-gradient(circle 10px at 0 50%,#0000 97%,#000) left/51% 100% no-repeat,radial-gradient(circle 10px at 100% 50%,#0000 97%,#000) right/51% 100% no-repeat;
+  font:600 12px var(--sans);letter-spacing:.3em;text-transform:uppercase;animation:tix 1s var(--ease) both}
+@keyframes tix{from{opacity:0;transform:translateY(-24px) rotate(-6deg)}to{opacity:1;transform:none}}
+.confirm h3{font-family:var(--display);font-weight:400;font-size:clamp(40px,5vw,60px);margin:0;color:var(--red);line-height:1}
+.confirm p{max-width:520px;margin:16px auto 0}
+.confirm .ref{display:inline-block;margin:22px 0 8px;padding:12px 22px;border:1px dashed var(--gold);font:600 18px var(--sans);letter-spacing:.12em}
+.confirm .review{text-align:left;margin:26px 0 30px}
+.fallback{text-align:left}
+.fallback h3{font-family:var(--display);font-weight:400;font-size:clamp(30px,3.6vw,42px);margin:0 0 10px;line-height:1.05}
+.fallback pre{white-space:pre-wrap;background:#fff;border:1px solid #d9cdb8;padding:16px;font:14px/1.55 var(--sans);margin:18px 0}
+.fallback .row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+
+/* ---------- Gallery ---------- */
+.gallery{background:var(--ivory);overflow:hidden}
+.feature{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;align-items:center;margin-bottom:130px}
+.feature:last-child{margin-bottom:0}
+.feature__img{grid-column:1 / span 7;position:relative}
+.feature__img img{width:100%;height:auto}
+.feature__img::after{content:"";position:absolute;inset:14px -14px -14px 14px;border:1px solid var(--gold);z-index:-1}
+.feature__txt{grid-column:9 / span 4}
+.feature--flip .feature__img{grid-column:6 / span 7;grid-row:1}
+.feature--flip .feature__img::after{inset:14px 14px -14px -14px}
+.feature--flip .feature__txt{grid-column:1 / span 4;grid-row:1}
+.feature__no{font-family:var(--display);font-size:20px;color:var(--gold);letter-spacing:.1em}
+.feature h3{font-family:var(--display);font-weight:400;font-size:clamp(44px,5.4vw,78px);line-height:.92;margin:10px 0 20px}
+.feature h3 em{font-style:normal;color:var(--red)}
+.feature p{color:#4a4440;margin:0 0 28px;max-width:380px}
+.feature__pair{display:grid;grid-template-columns:1.05fr .95fr;gap:16px;align-items:end}
+.feature__pair img:last-child{margin-bottom:-60px}
+.allEyes{background:var(--black);color:var(--ivory);padding:110px 0 120px;position:relative;overflow:hidden}
+.allEyes__grid{display:grid;grid-template-columns:1fr minmax(0,560px) 1fr;gap:40px;align-items:center}
+.allEyes__img{position:relative}
+.allEyes__img img{width:100%;height:auto;border:1px solid rgba(214,170,98,.5)}
+.allEyes h3{font-family:var(--display);font-weight:400;font-size:clamp(54px,7vw,112px);line-height:.9;margin:0}
+.allEyes h3:last-of-type{text-align:right}
+.allEyes .side{display:flex;flex-direction:column;gap:24px}
+.allEyes .side--r{align-items:flex-end;text-align:right}
+.allEyes p{color:var(--ivory-2);max-width:260px;margin:0}
+@media (max-width:900px){
+  .feature{grid-template-columns:1fr;gap:34px;margin-bottom:96px}
+  .feature__img,.feature__txt,.feature--flip .feature__img,.feature--flip .feature__txt{grid-column:1;grid-row:auto}
+  .feature__img::after{inset:10px -10px -10px 10px}
+  .feature--flip .feature__img::after{inset:10px 10px -10px -10px}
+  .feature__pair img:last-child{margin-bottom:0}
+  .allEyes{padding:76px 0}
+  .allEyes__grid{grid-template-columns:1fr;gap:28px}
+  .allEyes .side,.allEyes .side--r{align-items:flex-start;text-align:left}
+  .allEyes h3:last-of-type{text-align:left}
+}
+
+/* ---------- About ---------- */
+.about{background:var(--red);color:var(--ivory);position:relative;overflow:hidden}
+.about__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:70px;align-items:center}
+.about__img img{width:100%;height:auto;border:8px solid var(--ivory);box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+.about .eyebrow{color:var(--gold-soft)}
+.about h2{font-size:clamp(46px,6vw,84px);margin:14px 0 28px}
+.about__copy p{font-family:var(--serif);font-style:italic;font-size:clamp(19px,1.8vw,23px);line-height:1.55;margin:0 0 30px;color:var(--ivory)}
+@media (max-width:900px){.about__grid{grid-template-columns:1fr;gap:44px}}
+
+/* ---------- How to order ---------- */
+.how{background:var(--ivory)}
+.how__steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;list-style:none;margin:0;padding:0;counter-reset:how;border-top:1px solid #d9cdb8}
+.how__steps li{padding:34px 26px 10px 0;counter-increment:how;position:relative}
+.how__steps li::before{content:counter(how,upper-roman);display:block;font-family:var(--display);font-size:46px;color:var(--red);line-height:1;margin-bottom:16px}
+.how__steps h3{font:600 14px var(--sans);letter-spacing:.22em;text-transform:uppercase;margin:0 0 10px}
+.how__steps p{margin:0;color:#4a4440;font-size:16px}
+@media (max-width:900px){.how__steps{grid-template-columns:1fr 1fr;gap:10px 24px}}
+@media (max-width:560px){.how__steps{grid-template-columns:1fr}}
+
+/* ---------- Fine print ---------- */
+.fineprint{background:#efe8dc}
+.acc{max-width:880px;margin:0 auto;border-top:1px solid #cdbfa6}
+.acc details{border-bottom:1px solid #cdbfa6}
+.acc summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 4px;font-family:var(--display);font-size:clamp(22px,2.4vw,28px)}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary::after{content:"";flex:none;width:14px;height:14px;border-right:1.5px solid var(--red);border-bottom:1.5px solid var(--red);transform:rotate(45deg) translate(-3px,-3px);transition:transform .3s}
+.acc details[open] summary::after{transform:rotate(-135deg) translate(-3px,-3px)}
+.acc .acc__body{padding:0 4px 26px;color:#3f3934;max-width:720px}
+.acc .acc__body p{margin:0 0 10px}
+.acc .acc__body ul{margin:0 0 10px;padding-left:20px}
+.acc .tbc{color:#7a6f63;font-style:italic}
+
+/* ---------- Contact ---------- */
+.contact{background:var(--black);color:var(--ivory)}
+.contact__grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:64px;align-items:start}
+.contact__img img{width:100%;height:auto;border:1px solid rgba(214,170,98,.5)}
+.contact h2{font-size:clamp(40px,5vw,72px);margin:12px 0 18px}
+.contact .eyebrow{color:var(--gold)}
+.contact__lead{color:var(--ivory-2);margin:0 0 26px}
+.contact__phone{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-bottom:34px}
+.contact__phone .num{font:600 22px var(--sans);letter-spacing:.06em}
+.contact .field label{color:var(--ivory-2)}
+.contact .field input,.contact .field select,.contact .field textarea{background:#221f1e;border-color:#433d39;color:var(--ivory)}
+.contact .field input:focus,.contact .field select:focus,.contact .field textarea:focus{border-color:var(--gold)}
+.contact .field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23D6AA62' stroke-width='1.5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;background-size:12px}
+.form-status{margin-top:16px;font-size:15px}
+.form-status.ok{color:var(--gold-soft)}
+@media (max-width:900px){.contact__grid{grid-template-columns:1fr;gap:40px}.contact__img{max-width:420px}}
+
+/* ---------- Finale + Footer ---------- */
+.finale{position:relative;background:var(--ink);color:var(--ivory);overflow:hidden}
+.finale__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch}
+.finale__img{position:relative;min-height:560px}
+.finale__img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 25%}
+.finale__copy{padding:90px 56px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.finale h2{font-size:clamp(48px,6vw,92px);margin:14px 0 18px}
+.finale .tagline{font-size:22px;color:var(--ivory-2);margin:0 0 36px}
+@media (max-width:900px){.finale__grid{grid-template-columns:1fr}.finale__img{min-height:0;aspect-ratio:4/5}.finale__copy{padding:60px 24px 70px}}
+.footer{background:var(--black);color:var(--ivory);padding:0 0 30px;position:relative}
+.footer__lights{height:18px;background:radial-gradient(circle 3.5px at 13px 9px,var(--gold) 98%,transparent) 0 0/26px 18px repeat-x;border-top:1px solid rgba(214,170,98,.4);border-bottom:1px solid rgba(214,170,98,.15);opacity:.85}
+.footer__grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding:64px 0 46px}
+.footer h3{font:500 11.5px var(--sans);letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin:0 0 16px}
+.footer ul{list-style:none;margin:0;padding:0}
+.footer li{margin-bottom:9px;font-size:15px;color:rgba(245,240,231,.78)}
+.footer a{text-decoration:none}
+.footer a:hover{color:var(--gold)}
+.footer__brand{font-family:var(--display);font-size:38px;line-height:1}
+.footer__brand + .tagline{color:var(--ivory-2);margin:10px 0 0;font-size:18px}
+.footer__base{border-top:1px solid rgba(245,240,231,.1);padding-top:24px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:13px;color:rgba(245,240,231,.5)}
+.footer__base button{background:none;border:0;color:inherit;cursor:pointer;font-size:13px;text-decoration:underline;text-underline-offset:3px;padding:0}
+@media (max-width:900px){.footer__grid{grid-template-columns:1fr 1fr}.footer__grid > div:first-child{grid-column:1/-1}}
+@media (max-width:520px){.footer__grid{grid-template-columns:1fr}}
+
+/* Sticky mobile CTA */
+.sticky-cta{position:fixed;left:16px;right:16px;bottom:16px;z-index:40;display:none;transform:translateY(140%);transition:transform .4s var(--ease)}
+.sticky-cta.show{transform:none}
+.sticky-cta .ticket{width:100%;filter:drop-shadow(0 10px 18px rgba(0,0,0,.35))}
+.sticky-cta .ticket__face{width:100%}
+@media (max-width:900px){.sticky-cta{display:block}}
+
+/* ---------- Owner dashboard ---------- */
+.admin{position:fixed;inset:0;z-index:120;background:#f3eee5;color:var(--black);overflow:auto;display:none}
+.admin.open{display:block}
+.admin__bar{position:sticky;top:0;z-index:2;background:var(--black);color:var(--ivory);border-bottom:2px solid var(--gold)}
+.admin__bar .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.admin__bar .brand{font-size:20px}
+.admin__bar .brand small{font:500 11px var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-left:12px}
+.admin__close{background:none;border:1px solid rgba(245,240,231,.4);color:var(--ivory);padding:9px 14px;cursor:pointer;font:500 12px var(--sans);letter-spacing:.18em;text-transform:uppercase}
+.admin__body{padding:30px 0 80px}
+.tabs{display:flex;gap:6px;border-bottom:1px solid #d9cdb8;margin-bottom:26px;overflow-x:auto}
+.tabs button{background:none;border:0;border-bottom:2px solid transparent;padding:14px 16px;cursor:pointer;font:500 12.5px var(--sans);letter-spacing:.18em;text-transform:uppercase;color:#6b625a;white-space:nowrap}
+.tabs button[aria-selected="true"]{color:var(--black);border-color:var(--red)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:22px}
+.stat{background:#fff;border:1px solid #e0d6c4;padding:16px 18px}
+.stat b{display:block;font:600 28px var(--sans)}
+.stat span{font:500 11px var(--sans);letter-spacing:.18em;text-transform:uppercase;color:#6b625a}
+.filters{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:16px;align-items:end}
+.filters .field{min-width:180px}
+.filters .field select,.filters .field input{padding:10px 12px;font-size:15px}
+.olist{display:flex;flex-direction:column;gap:10px}
+.orow{background:#fff;border:1px solid #e0d6c4}
+.orow > button{width:100%;display:grid;grid-template-columns:150px 1.2fr 1.4fr 110px 150px 20px;gap:14px;align-items:center;text-align:left;background:none;border:0;padding:16px 18px;cursor:pointer;font-size:15px}
+.orow > button .ref{font:600 13.5px var(--sans);letter-spacing:.06em}
+.orow > button small{display:block;color:#7a6f63;font-size:12.5px}
+.badge{display:inline-block;padding:4px 9px;font:500 11px var(--sans);letter-spacing:.1em;text-transform:uppercase;border:1px solid currentColor;white-space:nowrap}
+.badge.new{color:var(--red)} .badge.pick{color:var(--blue)} .badge.del{color:#7a4a00} .badge.done{color:#2d6a3e} .badge.cxl{color:#777}
+.orow__detail{display:none;border-top:1px solid #e0d6c4;padding:20px 18px 22px;grid-template-columns:1fr 1fr;gap:26px}
+.orow.open .orow__detail{display:grid}
+.orow.open > button .chev{transform:rotate(180deg)}
+.chev{transition:transform .3s}
+.kv{display:grid;grid-template-columns:130px 1fr;gap:6px 14px;font-size:14.5px;margin:0}
+.kv dt{color:#7a6f63;font:500 11px var(--sans);letter-spacing:.16em;text-transform:uppercase;padding-top:3px}
+.kv dd{margin:0;overflow-wrap:anywhere}
+.admin h2{font-family:var(--display);font-weight:400;font-size:38px;margin:0 0 6px}
+.admin .sub{color:#6b625a;margin:0 0 22px}
+.panel{background:#fff;border:1px solid #e0d6c4;padding:24px;margin-bottom:20px}
+.panel h3{font:600 13px var(--sans);letter-spacing:.2em;text-transform:uppercase;margin:0 0 6px}
+.panel .hint{color:#7a6f63;font-size:14px;margin:0 0 16px}
+.ptable{width:100%;border-collapse:collapse;font-size:15px}
+.ptable th,.ptable td{border-bottom:1px solid #eee4d3;padding:8px 6px;text-align:left}
+.ptable input{width:110px;padding:8px 10px;border:1px solid #cfc2ab;font-size:15px}
+.toggle{display:flex;align-items:center;gap:10px;padding:8px 0;font-size:15.5px;cursor:pointer}
+.toggle input{width:20px;height:20px;accent-color:var(--red)}
+.admin-msg{padding:14px 16px;border-left:3px solid var(--gold);background:#fbf6ec;margin-bottom:20px;font-size:15px}
+.admin-msg.err{border-color:var(--red);background:#fbeeee}
+.btn-solid{background:var(--black);color:var(--ivory);border:0;padding:13px 22px;cursor:pointer;font:500 12.5px var(--sans);letter-spacing:.2em;text-transform:uppercase}
+.btn-solid:hover{background:var(--red)}
+.btn-solid:disabled{opacity:.5;cursor:wait}
+.empty{padding:40px;text-align:center;color:#7a6f63;background:#fff;border:1px dashed #d9cdb8}
+@media (max-width:900px){
+  .orow > button{grid-template-columns:1fr auto;grid-template-areas:"a e" "b d" "c c"}
+  .orow > button > :nth-child(1){grid-area:a}.orow > button > :nth-child(2){grid-area:b}.orow > button > :nth-child(3){grid-area:c}
+  .orow > button > :nth-child(4){grid-area:d;text-align:right}.orow > button > :nth-child(5){grid-area:e;text-align:right}.orow > button > :nth-child(6){display:none}
+  .orow__detail{grid-template-columns:1fr}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  .strip__track{animation:none}
+  .bulb{opacity:.8}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ================= CURTAIN ================= -->
+<div class="curtain" id="curtain" hidden aria-hidden="true">
+  <div class="curtain__valance"></div>
+  <div class="curtain__panel curtain__panel--l"></div>
+  <div class="curtain__panel curtain__panel--r"></div>
+  <div class="curtain__mark">
+    <div class="display">PL BUNDLES</div>
+    <div class="tagline">The Funhouse</div>
+  </div>
+  <button class="curtain__skip" id="curtainSkip" type="button">Skip intro</button>
+</div>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="wrap nav__in">
+    <a class="brand" href="#home" aria-label="PL BUNDLES home">PL <span>BUNDLES</span></a>
+    <button class="nav__toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#shop">Shop the Show</a></li>
+      <li><a href="#curtain-gallery">Behind the Curtain</a></li>
+      <li><a href="#fine-print">The Fine Print</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a class="nav__order" href="#build"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 6a2 2 0 0 0 0 8v2h16v-2a2 2 0 0 1 0-4V4H2v2z" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M12 4v12" stroke="currentColor" stroke-dasharray="2 2"/></svg>Order Request</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= 1. THE GRAND ENTRANCE ================= -->
+<section class="hero" id="home" aria-labelledby="heroTitle">
+  <div class="hero__grid">
+    <div class="hero__copy">
+      <div class="marquee-frame" id="marqueeFrame">
+        <div class="bulbs" id="bulbs" aria-hidden="true"></div>
+        <h1 id="heroTitle">
+          <span class="display hero__brand">PL BUNDLES</span>
+          <span class="display hero__sub">THE FUNHOUSE</span>
+        </h1>
+        <p class="tagline">Where Good Hair Is the Main Attraction.</p>
+      </div>
+      <div class="hero__ctas">
+        <a class="ticket" href="#shop"><span class="ticket__face"><small>Admit one: good hair</small>Shop the Show</span></a>
+        <a class="btn-line" href="#curtain-gallery">Explore the Funhouse</a>
+      </div>
+      <div class="hero__facts" aria-label="At a glance">
+        <span>3 &amp; 4 bundle deals</span><span>20″ – 30″</span><span>Baltimore pickup or delivery</span>
+      </div>
+    </div>
+    <div class="hero__media">
+      <img src="img/hero-circus-tent-poster.jpg" width="1320" height="1644" fetchpriority="high"
+        alt="PL BUNDLES Funhouse campaign poster: the ringmaster in a red tailcoat and top hat holds puppet strings above a striped circus tent with the lit PL BUNDLES FUNHOUSE marquee, as five models in jester, clown, twin blue-dress and lion costumes pose on the stage below.">
+    </div>
+  </div>
+</section>
+
+<div class="strip" aria-hidden="true">
+  <div class="strip__track" id="stripTrack"></div>
+</div>
+
+<!-- ================= 2. THE MAIN ATTRACTION ================= -->
+<section class="sec shop" id="shop" aria-labelledby="shopTitle">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="rule"><span class="eyebrow">Shop the Show</span></div>
+      <h2 class="display" id="shopTitle">THE MAIN ATTRACTION</h2>
+      <p class="tagline">Your next look starts here.</p>
+    </div>
+    <div class="shop__grid">
+      <figure class="shop__photo reveal" style="margin:0">
+        <img src="img/solo-jester-cards.jpg" loading="lazy" width="1320" height="1942"
+          alt="The jester model in a black satin harlequin top, jester headband and checkered stockings, holding an oversized two of diamonds playing card in front of red-and-white circus curtains.">
+        <figcaption>Choose your inches. Choose your look.</figcaption>
+      </figure>
+      <div id="dealCards" style="display:contents"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 3. BUILD YOUR LOOK ================= -->
+<section class="sec builder" id="build" aria-labelledby="buildTitle">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="rule"><span class="eyebrow">Order Request</span></div>
+      <h2 class="display" id="buildTitle">BUILD YOUR MAIN ATTRACTION</h2>
+      <p class="tagline">Choose your inches. Choose your look.</p>
+    </div>
+
+    <ol class="acts" id="acts" aria-label="Order steps"></ol>
+
+    <div class="mobile-sum" id="mobileSum">
+      <button type="button" aria-expanded="false" aria-controls="mobileSumBody"><span id="mobileSumLabel">Bundle subtotal</span><strong><b id="mobileSumTotal">—</b><i aria-hidden="true">▾</i></strong></button>
+      <div class="mobile-sum__body" id="mobileSumBody"></div>
+    </div>
+
+    <div class="builder__grid">
+      <form class="stage" id="orderForm" novalidate>
+        <!-- Step 1 -->
+        <div class="step" data-step="0">
+          <h3>Select your texture</h3>
+          <p class="lead">One texture per bundle deal.</p>
+          <div class="opts opts--3" role="radiogroup" aria-label="Hair texture" id="texOpts"></div>
+          <p class="step-err" role="alert">Please choose a hair texture.</p>
+        </div>
+        <!-- Step 2 -->
+        <div class="step" data-step="1">
+          <h3>How many bundles?</h3>
+          <p class="lead">Three or four — every bundle in your deal is the same length.</p>
+          <div class="opts opts--2" role="radiogroup" aria-label="Bundle quantity" id="qtyOpts"></div>
+          <p class="step-err" role="alert">Please choose 3 or 4 bundles.</p>
+        </div>
+        <!-- Step 3 -->
+        <div class="step" data-step="2">
+          <h3>Choose your inches</h3>
+          <p class="lead" id="lenLead">All bundles in your deal use the length you choose.</p>
+          <div class="opts opts--len" role="radiogroup" aria-label="Bundle length" id="lenOpts"></div>
+          <p class="step-err" role="alert">Please choose a length.</p>
+        </div>
+        <!-- Step 4 -->
+        <div class="step" data-step="3">
+          <h3>How will you receive it?</h3>
+          <p class="lead">Pick up in Baltimore or request delivery.</p>
+          <div class="opts opts--2" role="radiogroup" aria-label="Receiving method" id="methodOpts"></div>
+          <div id="methodDetail"></div>
+          <p class="step-err" role="alert">Please choose pickup or delivery.</p>
+        </div>
+        <!-- Step 5 -->
+        <div class="step" data-step="4">
+          <h3>Your information</h3>
+          <p class="lead">No account needed. We'll use this to confirm your order.</p>
+          <div class="fields">
+            <div class="field full"><label for="fName">Full name</label><input id="fName" name="name" autocomplete="name" required><div class="msg">Please enter your full name.</div></div>
+            <div class="field"><label for="fPhone">Phone number</label><input id="fPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="(410) 555-0123"><div class="msg">Please enter a 10-digit phone number.</div></div>
+            <div class="field"><label for="fEmail">Email address</label><input id="fEmail" name="email" type="email" autocomplete="email" required><div class="msg">Please enter a valid email address.</div></div>
+            <div class="field full"><label for="fNotes">Order notes <em>(optional)</em></label><textarea id="fNotes" name="notes" maxlength="1000" placeholder="Anything we should know?"></textarea></div>
+          </div>
+        </div>
+        <!-- Step 6 -->
+        <div class="step" data-step="5">
+          <h3>Review your order request</h3>
+          <p class="lead">Check everything over — tap Edit to change a selection.</p>
+          <dl class="review" id="reviewList"></dl>
+          <p class="fine">You're not paying online. Submitting sends your request to PL BUNDLES. We'll contact you to confirm availability, receiving details and payment instructions.</p>
+          <p class="step-err" role="alert" id="submitErr"></p>
+        </div>
+        <!-- Result -->
+        <div class="step" data-step="6" id="resultStep" tabindex="-1"></div>
+
+        <div class="step-nav" id="stepNav">
+          <button type="button" class="back" id="backBtn">← Back</button>
+          <button type="submit" class="ticket" id="nextBtn"><span class="ticket__face" id="nextLabel">Continue</span></button>
+        </div>
+      </form>
+
+      <aside class="summary" aria-labelledby="sumTitle" aria-live="polite">
+        <h4 id="sumTitle">Your Ticket</h4>
+        <span class="eyebrow">Order summary</span>
+        <div id="summaryBody"></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 4. BEHIND THE CURTAIN ================= -->
+<section class="sec gallery" id="curtain-gallery" aria-labelledby="galTitle">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="rule"><span class="eyebrow">The Campaign</span></div>
+      <h2 class="display" id="galTitle">BEHIND THE CURTAIN</h2>
+      <p class="tagline">Every look deserves its moment in the spotlight.</p>
+    </div>
+
+    <article class="feature">
+      <div class="feature__img reveal"><img src="img/jester-and-lion.jpg" loading="lazy" width="1320" height="1908" alt="Two models in front of red-and-white circus curtains: one crouched in a gold velvet lion costume with a furry hood, the other standing in a black-and-white jester outfit with long, sleek dark hair."></div>
+      <div class="feature__txt reveal">
+        <div class="feature__no">Act I</div>
+        <h3>THE <em>MANE</em> ATTRACTION</h3>
+        <p>Volume that commands the room. Statement hair, dramatic beauty and a look that roars before you say a word.</p>
+        <a class="ticket" href="#build"><span class="ticket__face">Build your look</span></a>
+      </div>
+    </article>
+
+    <article class="feature feature--flip">
+      <div class="feature__img reveal"><img src="img/alice-duo-long-hair.jpg" loading="lazy" width="1320" height="1798" alt="Two models in light-blue dresses with white petticoats in front of red-and-white curtains; one stands holding a long length of the other model's sleek, straight black hair stretched between them."></div>
+      <div class="feature__txt reveal">
+        <div class="feature__no">Act II</div>
+        <h3>DOUBLE THE <em>DRAMA</em></h3>
+        <p>Sleek, flowing and long enough to pull focus. When it comes to length, two is always better than one.</p>
+        <a class="ticket" href="#build"><span class="ticket__face">Choose your inches</span></a>
+      </div>
+    </article>
+
+    <article class="feature">
+      <div class="feature__img reveal"><img src="img/solo-jester-cards.jpg" loading="lazy" width="1320" height="1942" alt="The jester model glancing back over her shoulder with a surprised expression, long dark hair falling down her back, holding a giant playing card."></div>
+      <div class="feature__txt reveal">
+        <div class="feature__no">Act III</div>
+        <h3>NO TRICKS, <em>JUST INCHES</em></h3>
+        <p>What you see is what you choose: 20 to 30 inches, three or four bundles, priced plainly. The only sleight of hand is how good it looks.</p>
+        <a class="ticket" href="#shop"><span class="ticket__face">See the deals</span></a>
+      </div>
+    </article>
+
+    <article class="feature feature--flip">
+      <div class="feature__img reveal">
+        <div class="feature__pair">
+          <img src="img/solo-ringmaster.jpg" loading="lazy" width="1320" height="1812" alt="The ringmaster in a black shirt, bow tie and red-banded top hat, tipping his hat with one hand and leaning on a cane while standing on a red-and-white circus target platform.">
+          <img src="img/ringmaster-plbundles-ball.jpg" loading="lazy" width="1320" height="1784" alt="The ringmaster leaning over an oversized red, blue and yellow inflatable ball spelling PLBUNDLES in balloon letters, surrounded by red balloons.">
+        </div>
+      </div>
+      <div class="feature__txt reveal">
+        <div class="feature__no">Act IV</div>
+        <h3>THE RINGMASTER'S <em>CHOICE</em></h3>
+        <p>Every great show has someone calling the shots. At PL BUNDLES, the spotlight goes where the hair is.</p>
+        <a class="ticket" href="#build"><span class="ticket__face">Start your order</span></a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="allEyes" aria-labelledby="allEyesTitle">
+  <div class="wrap allEyes__grid">
+    <div class="side reveal">
+      <h3 id="allEyesTitle">ALL EYES</h3>
+      <p>The full company, center stage. One campaign, six personalities, every look in the spotlight.</p>
+    </div>
+    <div class="allEyes__img reveal">
+      <img src="img/full-group-campaign.jpg" loading="lazy" width="1320" height="1945" alt="The full PL BUNDLES campaign cast of six posing together in front of red-and-white curtains: the jester, the ringmaster with a cane, a striped clown, the lion, and two models in blue dresses holding teddy bears.">
+    </div>
+    <div class="side side--r reveal">
+      <h3 aria-hidden="true">ON PL</h3>
+      <a class="ticket ticket--gold" href="#build"><span class="ticket__face"><small>Admit one: good hair</small>Shop the Show</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 5. MORE THAN JUST A SHOW ================= -->
+<section class="sec about" id="about" aria-labelledby="aboutTitle">
+  <div class="wrap about__grid">
+    <div class="about__img reveal"><img src="img/full-group-campaign.jpg" loading="lazy" width="1320" height="1945" alt="The six-member PL BUNDLES campaign cast together in costume in front of the circus curtains."></div>
+    <div class="about__copy reveal">
+      <span class="eyebrow">Our Story</span>
+      <h2 class="display" id="aboutTitle">MORE THAN JUST A SHOW</h2>
+      <div id="aboutText"></div>
+      <a class="btn-line" href="#build">Build your look</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 6. HOW TO ORDER ================= -->
+<section class="sec how" id="how" aria-labelledby="howTitle">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="rule"><span class="eyebrow">Simple as a ticket</span></div>
+      <h2 class="display" id="howTitle">HOW TO ORDER</h2>
+      <p class="tagline">Request online. Confirm with us. Get your hair.</p>
+    </div>
+    <ol class="how__steps reveal">
+      <li><h3>Build your deal</h3><p>Choose your texture, 3 or 4 bundles, and your length from 20″ to 30″.</p></li>
+      <li><h3>Pick up or delivery</h3><p>Choose Baltimore pickup or request delivery to your address.</p></li>
+      <li><h3>Submit your request</h3><p>No payment online. You'll get an order reference right away.</p></li>
+      <li><h3>We confirm</h3><p>PL BUNDLES contacts you to confirm availability, receiving details and payment.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= 7. THE FINE PRINT ================= -->
+<section class="sec fineprint" id="fine-print" aria-labelledby="fpTitle">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="rule"><span class="eyebrow">Ordering Policies</span></div>
+      <h2 class="display" id="fpTitle">THE FINE PRINT</h2>
+      <p class="tagline">Everything you need to know before the show.</p>
+    </div>
+    <div class="acc" id="policyAcc"></div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="sec contact" id="contact" aria-labelledby="contactTitle">
+  <div class="wrap contact__grid">
+    <div class="contact__img reveal"><img src="img/solo-ringmaster.jpg" loading="lazy" width="1320" height="1812" alt="The ringmaster tipping his top hat and leaning on a cane on a red-and-white circus platform."></div>
+    <div class="reveal">
+      <span class="eyebrow">Questions?</span>
+      <h2 class="display" id="contactTitle">CONTACT THE RINGMASTER.</h2>
+      <p class="contact__lead">Questions about textures, lengths, pickup, delivery or payment? Text us, or send a message below.</p>
+      <div class="contact__phone">
+        <a class="ticket ticket--gold" id="smsBtn" href="#"><span class="ticket__face">Text PL BUNDLES</span></a>
+        <span class="num" data-phone></span>
+      </div>
+      <form id="inqForm" novalidate>
+        <div class="fields">
+          <div class="field"><label for="iName">Name</label><input id="iName" autocomplete="name" required><div class="msg">Please enter your name.</div></div>
+          <div class="field"><label for="iPhone">Phone or email</label><input id="iPhone" autocomplete="tel" required><div class="msg">Please add a phone number or email so we can reply.</div></div>
+          <div class="field"><label for="iType">Question about</label>
+            <select id="iType"><option>General question</option><option>An existing order request</option><option>Payment</option><option>Pickup or delivery</option></select></div>
+          <div class="field"><label for="iRef">Order reference <em>(if you have one)</em></label><input id="iRef" placeholder="PLB-…"></div>
+          <div class="field full"><label for="iMsg">Message</label><textarea id="iMsg" required maxlength="1500"></textarea><div class="msg">Please write a message.</div></div>
+        </div>
+        <div style="margin-top:22px"><button class="ticket" type="submit" id="inqBtn"><span class="ticket__face">Send message</span></button></div>
+        <div class="form-status" id="inqStatus" role="status"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 8. THE GRAND FINALE ================= -->
+<section class="finale" aria-labelledby="finaleTitle">
+  <div class="finale__grid">
+    <div class="finale__img"><img src="img/ringmaster-plbundles-ball.jpg" loading="lazy" width="1320" height="1784" alt="The ringmaster in a top hat leaning over a giant red, blue and yellow PLBUNDLES ball surrounded by red balloons."></div>
+    <div class="finale__copy reveal">
+      <span class="eyebrow" style="color:var(--gold)">The Grand Finale</span>
+      <h2 class="display" id="finaleTitle">YOUR NEXT LOOK AWAITS</h2>
+      <p class="tagline">The curtain's up. Take your seat.</p>
+      <a class="ticket" href="#build"><span class="ticket__face"><small>Admit one: good hair</small>Shop the Show</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer__lights" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">PL BUNDLES</div>
+        <p class="tagline">Where Good Hair Is the Main Attraction.</p>
+      </div>
+      <div><h3>Explore</h3><ul>
+        <li><a href="#home">Home</a></li><li><a href="#shop">Shop the Show</a></li><li><a href="#curtain-gallery">Behind the Curtain</a></li><li><a href="#contact">Contact</a></li></ul></div>
+      <div><h3>Ordering</h3><ul>
+        <li><a href="#build">Start an order request</a></li><li>Baltimore, MD pickup</li><li>Delivery on request</li><li id="footPay"></li></ul></div>
+      <div><h3>Policies &amp; Contact</h3><ul>
+        <li><a href="#fine-print">The Fine Print</a></li><li><a href="#how">How to Order</a></li><li><a data-tel href="#"><span data-phone></span></a></li></ul></div>
+    </div>
+    <div class="footer__base">
+      <span>© <span id="year"></span> PL BUNDLES. All rights reserved.</span>
+      <button type="button" id="ownerLink">Owner dashboard</button>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-cta" id="stickyCta"><a class="ticket" href="#build"><span class="ticket__face">Shop the Show</span></a></div>
+
+<!-- ================= OWNER DASHBOARD ================= -->
+<div class="admin" id="admin" role="dialog" aria-modal="true" aria-labelledby="adminTitle">
+  <div class="admin__bar"><div class="wrap">
+    <div class="brand" id="adminTitle">PL BUNDLES<small>Owner dashboard</small></div>
+    <button class="admin__close" type="button" id="adminClose">Back to site</button>
+  </div></div>
+  <div class="admin__body"><div class="wrap" id="adminBody"></div></div>
+</div>
+
+<script>
+/* =========================================================
+   CENTRAL CONFIGURATION — every price & policy lives here.
+   The owner can override any of these from the dashboard
+   (saved to the database at config/site).
+   ========================================================= */
+const DEFAULT_CONFIG = {
+  phone: "410-428-4901",
+  lengths: [20, 22, 24, 26, 28, 30],
+  prices: {
+    "3": { "20": 270, "22": 280, "24": 300, "26": 315, "28": 330, "30": 345 },
+    "4": { "20": 355, "22": 365, "24": 385, "26": 400, "28": 430, "30": 460 }
+  },
+  textures: [
+    { id: "natural-wavy", name: "Natural Wavy", available: true },
+    { id: "plb-v-wavy",   name: "PLB V-Wavy",   available: true },
+    { id: "mc-burmese",   name: "MC Burmese",   available: true }
+  ],
+  pickupDeposit: 15,
+  pickupNote: "Pickup details will be provided after your order is confirmed.",
+  deliveryFee: null, // null = not confirmed yet
+  deliveryNote: "Delivery availability and any applicable fees will be confirmed after your order request is reviewed.",
+  paymentMethods: ["Cash App", "Cash", "Tap to Pay"],
+  about: "At PL BUNDLES, every look deserves the spotlight. We believe great hair is more than an accessory — it's part of the statement. Welcome to a world where confidence, creativity, and unforgettable looks take center stage.",
+  policies: { processing: "", cancellations: "", returns: "" }
+};
+const STATUSES = ["New Request","Awaiting Confirmation","Awaiting Payment","Confirmed","Processing","Ready for Pickup","Out for Delivery","Completed","Cancelled"];
+const US_STATES = "AL AK AZ AR CA CO CT DE DC FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY".split(" ");
+
+let CFG = structuredClone(DEFAULT_CONFIG);
+
+/* ---------- helpers ---------- */
+const $ = (s, r=document) => r.querySelector(s);
+const $$ = (s, r=document) => [...r.querySelectorAll(s)];
+function h(tag, attrs={}, ...kids){
+  const el = document.createElement(tag);
+  for (const [k,v] of Object.entries(attrs||{})){
+    if (v===false || v==null) continue;
+    if (k==="class") el.className=v;
+    else if (k.startsWith("on")) el.addEventListener(k.slice(2), v);
+    else if (k==="text") el.textContent=v;
+    else el.setAttribute(k, v===true?"":v);
+  }
+  for (const k of kids.flat()){ if (k==null||k===false) continue; el.append(k.nodeType?k:document.createTextNode(String(k))); }
+  return el;
+}
+const money = n => (typeof n==="number" && isFinite(n)) ? "$"+n.toLocaleString("en-US",{minimumFractionDigits:n%1?2:0,maximumFractionDigits:2}) : "—";
+const digits = s => (s||"").replace(/\D/g,"");
+const phoneDigits = () => digits(CFG.phone).slice(-10);
+const smsHref = body => "sms:+1"+phoneDigits()+"?&body="+encodeURIComponent(body);
+const telHref = () => "tel:+1"+phoneDigits();
+const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+function priceFor(qty,len){ const p = CFG.prices?.[String(qty)]?.[String(len)]; return typeof p==="number"&&isFinite(p)?p:null; }
+function texName(id){ return (CFG.textures.find(t=>t.id===id)||{}).name || ""; }
+function fromPrice(qty){ const v = CFG.lengths.map(l=>priceFor(qty,l)).filter(x=>x!=null); return v.length?Math.min(...v):null; }
+function deliveryFeeKnown(){ return typeof CFG.deliveryFee==="number" && isFinite(CFG.deliveryFee) && CFG.deliveryFee>=0; }
+
+/* ---------- platform (database + user) ---------- */
+const hasClaude = typeof window.claude?.use === "function";
+const dbP = hasClaude ? window.claude.use("db").catch(()=>null) : Promise.resolve(null);
+const userP = hasClaude ? window.claude.use("user").catch(()=>null) : Promise.resolve(null);
+
+/* sanitise config loaded from the database */
+function mergeConfig(raw){
+  const c = structuredClone(DEFAULT_CONFIG);
+  if (!raw || typeof raw!=="object") return c;
+  if (raw.prices && typeof raw.prices==="object"){
+    for (const q of ["3","4"]) for (const l of c.lengths){
+      const v = Number(raw.prices?.[q]?.[String(l)]);
+      if (isFinite(v) && v>0) c.prices[q][String(l)] = v;
+    }
+  }
+  if (Array.isArray(raw.textures)){
+    for (const t of c.textures){ const r = raw.textures.find(x=>x&&x.id===t.id); if (r && typeof r.available==="boolean") t.available=r.available; }
+  }
+  const dep = Number(raw.pickupDeposit); if (raw.pickupDeposit!=null && isFinite(dep) && dep>=0) c.pickupDeposit = dep;
+  if (raw.deliveryFee===null) c.deliveryFee=null; else { const f=Number(raw.deliveryFee); if (raw.deliveryFee!==undefined && raw.deliveryFee!=="" && isFinite(f) && f>=0) c.deliveryFee=f; }
+  for (const k of ["pickupNote","deliveryNote","about"]) if (typeof raw[k]==="string" && raw[k].trim()) c[k]=raw[k].slice(0,3000);
+  if (Array.isArray(raw.paymentMethods)) { const pm = raw.paymentMethods.filter(x=>typeof x==="string"&&x.trim()).map(x=>x.slice(0,60)); if (pm.length) c.paymentMethods=pm; }
+  if (raw.policies && typeof raw.policies==="object") for (const k of Object.keys(c.policies)) if (typeof raw.policies[k]==="string") c.policies[k]=raw.policies[k].slice(0,3000);
+  return c;
+}
+
+/* =========================================================
+   CURTAIN
+   ========================================================= */
+(function curtain(){
+  let seen = false;
+  try { seen = sessionStorage.getItem("plb-curtain")==="1"; } catch(e){}
+  if (seen || reduceMotion) return;
+  const c = $("#curtain"); c.hidden = false;
+  document.documentElement.style.overflow="hidden";
+  const done = () => { c.hidden = true; document.documentElement.style.overflow=""; try{sessionStorage.setItem("plb-curtain","1")}catch(e){} };
+  const open = () => { if (c.classList.contains("open")) return; c.classList.add("open"); setTimeout(done, 1350); };
+  $("#curtainSkip").addEventListener("click", () => { c.classList.add("open"); done(); });
+  setTimeout(open, 450);
+})();
+
+/* =========================================================
+   NAV
+   ========================================================= */
+const nav = $("#nav"), navToggle = $("#navToggle");
+navToggle.addEventListener("click", () => { const o = nav.classList.toggle("open"); navToggle.setAttribute("aria-expanded", o); navToggle.setAttribute("aria-label", o?"Close menu":"Open menu"); });
+$$("#navLinks a").forEach(a => a.addEventListener("click", () => { nav.classList.remove("open"); navToggle.setAttribute("aria-expanded", false); }));
+
+/* =========================================================
+   MARQUEE BULBS + STRIP
+   ========================================================= */
+function layoutBulbs(){
+  const box = $("#bulbs"); const r = box.getBoundingClientRect(); box.textContent="";
+  const w=r.width, ht=r.height, gap=26; if (!w||!ht) return;
+  const per = 2*(w+ht); const n = Math.max(8, Math.round(per/gap));
+  for (let i=0;i<n;i++){
+    let d = i/n*per, x, y;
+    if (d<w){x=d;y=0} else if ((d-=w)<ht){x=w;y=d} else if ((d-=ht)<w){x=w-d;y=ht} else {d-=w;x=0;y=ht-d}
+    const b = h("span",{class:"bulb"}); b.style.left=x+"px"; b.style.top=y+"px"; b.style.animationDelay=(i/n*4.2).toFixed(2)+"s"; box.append(b);
+  }
+}
+new ResizeObserver(layoutBulbs).observe($("#marqueeFrame"));
+(function strip(){
+  const words = ["THE MAIN ATTRACTION","LUXURY BUNDLES","YOUR NEXT LOOK AWAITS","PL BUNDLES"];
+  const track = $("#stripTrack");
+  for (let k=0;k<2;k++){ const s = h("div",{class:"strip__item"}); for (let r=0;r<3;r++) words.forEach(w=>{ s.append(w); s.append(h("b",{},"•")); }); track.append(s); }
+})();
+
+/* reveal on scroll */
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } }), {rootMargin:"0px 0px -8% 0px", threshold:.08});
+$$(".reveal").forEach(el => io.observe(el));
+
+/* sticky mobile CTA */
+(function(){
+  const cta = $("#stickyCta"); let heroOut=false, inBuild=false, inFooter=false;
+  const upd = () => cta.classList.toggle("show", heroOut && !inBuild && !inFooter);
+  new IntersectionObserver(([e])=>{heroOut=!e.isIntersecting;upd()}).observe($("#home"));
+  new IntersectionObserver(([e])=>{inBuild=e.isIntersecting;upd()},{threshold:0}).observe($("#build"));
+  new IntersectionObserver(([e])=>{inFooter=e.isIntersecting;upd()}).observe($(".finale"));
+  new IntersectionObserver(([e])=>{if(e.isIntersecting){inFooter=true;upd()}}).observe($(".footer"));
+})();
+
+/* =========================================================
+   ORDER STATE + BUILDER
+   ========================================================= */
+const S = { texture:null, qty:null, length:null, method:null, name:"", phone:"", email:"", notes:"", street:"", unit:"", city:"", state:"MD", zip:"" };
+const STEP_NAMES = [["Texture","Act I"],["Quantity","Act II"],["Length","Act III"],["Receiving","Act IV"],["Your Info","Act V"],["Review","Finale"]];
+let step = 0, maxStep = 0, submitted = null;
+
+function buildActs(){
+  const ol = $("#acts"); ol.textContent="";
+  STEP_NAMES.forEach(([n,a],i) => {
+    const b = h("button",{type:"button","data-i":i, onclick:()=>{ if (!submitted && i<=maxStep) goTo(i); }}, h("small",{},a), n);
+    ol.append(h("li",{style:"display:contents"},b));
+  });
+}
+function radioCard(group, value, checked, onPick, inner, disabled){
+  return h("button",{type:"button",class:"opt "+(group==="tex"?"opt--tex":""),role:"radio","aria-checked":checked?"true":"false",disabled:!!disabled,"data-v":value,onclick:()=>onPick(value)}, ...inner);
+}
+function renderOptions(){
+  // Texture
+  const tex = $("#texOpts"); tex.textContent="";
+  CFG.textures.forEach((t,i) => tex.append(radioCard("tex", t.id, S.texture===t.id, v=>{S.texture=v; update(); autoNext(0);},
+    [h("span",{class:"opt__k"},"Texture 0"+(i+1)), h("span",{class:"opt__t"},t.name), h("span",{class:"opt__s"}, t.available?"Available":"Currently unavailable"), h("span",{class:"opt__mono","aria-hidden":"true"}, t.name[0])], !t.available)));
+  // Quantity
+  const q = $("#qtyOpts"); q.textContent="";
+  [3,4].forEach(n => q.append(radioCard("qty", n, S.qty===n, v=>{S.qty=+v; update(); autoNext(1);},
+    [h("span",{class:"opt__k"},"Bundle deal"), h("span",{class:"opt__t"}, n+" Bundles"), h("span",{class:"opt__s"},"20″ – 30″ · from "+money(fromPrice(n)))])));
+  // Length
+  const L = $("#lenOpts"); L.textContent="";
+  $("#lenLead").textContent = S.qty ? `Prices shown for ${S.qty} bundles. All bundles in your deal use the length you choose.` : "Choose your bundle quantity first to see prices. All bundles in your deal use the length you choose.";
+  CFG.lengths.forEach(l => { const p = S.qty?priceFor(S.qty,l):null;
+    L.append(radioCard("len", l, S.length===l, v=>{S.length=+v; update(); autoNext(2);},
+      [h("span",{class:"opt__t"}, l+"″"), h("span",{class:"opt__p"}, S.qty?money(p):"")]));
+  });
+  // Method
+  const M = $("#methodOpts"); M.textContent="";
+  M.append(radioCard("m","pickup",S.method==="pickup",v=>{S.method=v;update();},[h("span",{class:"opt__k"},"Option A"),h("span",{class:"opt__t"},"Pickup — Baltimore, MD"),h("span",{class:"opt__s"},money(CFG.pickupDeposit)+" deposit, credited toward your total")]));
+  M.append(radioCard("m","delivery",S.method==="delivery",v=>{S.method=v;update();},[h("span",{class:"opt__k"},"Option B"),h("span",{class:"opt__t"},"Delivery"),h("span",{class:"opt__s"}, deliveryFeeKnown()?"Delivery fee "+money(CFG.deliveryFee)+" (confirmed on review)":"Availability & fees confirmed on review")]));
+  renderMethodDetail();
+}
+function renderMethodDetail(){
+  const d = $("#methodDetail"); d.textContent="";
+  const sub = (S.qty&&S.length)?priceFor(S.qty,S.length):null;
+  if (S.method==="pickup"){
+    const n = h("div",{class:"note"}, h("p",{style:"margin:0 0 6px"}, CFG.pickupNote),
+      h("p",{style:"margin:0"}, h("strong",{},`Pickup requires a ${money(CFG.pickupDeposit)} deposit.`)," The deposit is deducted from your order total — it is not an extra charge."));
+    if (sub!=null) n.append(h("dl",{class:"breakdown"}, h("dt",{},"Bundle subtotal"),h("dd",{},money(sub)), h("dt",{},"Pickup deposit"),h("dd",{},"− "+money(CFG.pickupDeposit)), h("dt",{},"Remaining balance after deposit"),h("dd",{},money(Math.max(0,sub-CFG.pickupDeposit)))));
+    d.append(n);
+  } else if (S.method==="delivery"){
+    d.append(h("div",{class:"note"}, CFG.deliveryNote));
+    const st = h("select",{id:"fState",autocomplete:"address-level1",required:true}); US_STATES.forEach(s=>st.append(h("option",{value:s,selected:S.state===s},s)));
+    const f = h("div",{class:"fields"},
+      fld("fStreet","Street address","street","address-line1",true,"full","Please enter your street address."),
+      fld("fUnit","Apartment or unit","unit","address-line2",false,"full","",true),
+      fld("fCity","City","city","address-level2",true,"","Please enter your city."),
+      h("div",{class:"field"}, h("label",{for:"fState"},"State"), st, h("div",{class:"msg"},"Please choose a state.")),
+      fld("fZip","ZIP code","zip","postal-code",true,"","Please enter a 5-digit ZIP code."));
+    d.append(f);
+    st.addEventListener("change",()=>{S.state=st.value;update(false)});
+  }
+}
+function fld(id,label,key,ac,req,cls,msg,optional){
+  const inp = h("input",{id,autocomplete:ac,required:req||null,value:S[key]||"",inputmode:key==="zip"?"numeric":null,maxlength:key==="zip"?"10":"120"});
+  inp.addEventListener("input",()=>{S[key]=inp.value; inp.closest(".field").classList.remove("err"); update(false);});
+  return h("div",{class:"field "+(cls||"")}, h("label",{for:id},label, optional?h("em",{}," (optional)"):null), inp, msg?h("div",{class:"msg"},msg):null);
+}
+["fName:name","fPhone:phone","fEmail:email","fNotes:notes"].forEach(p=>{const [id,k]=p.split(":"); const el=$("#"+id); el.addEventListener("input",()=>{S[k]=el.value; el.closest(".field").classList.remove("err"); update(false);});});
+
+function calc(){
+  const sub = (S.qty&&S.length)?priceFor(S.qty,S.length):null;
+  const o = { sub, deposit:null, balance:null, fee:null, est:null };
+  if (sub!=null && S.method==="pickup"){ o.deposit=CFG.pickupDeposit; o.balance=Math.max(0,sub-CFG.pickupDeposit); }
+  if (sub!=null && S.method==="delivery" && deliveryFeeKnown()){ o.fee=CFG.deliveryFee; o.est=sub+CFG.deliveryFee; }
+  return o;
+}
+function summaryNodes(){
+  const c = calc();
+  const ul = h("ul",{class:"sum-list"},
+    h("li",{},h("span",{},"Texture"),h("span",{},texName(S.texture)||"—")),
+    h("li",{},h("span",{},"Bundles"),h("span",{},S.qty?S.qty+" bundles":"—")),
+    h("li",{},h("span",{},"Length"),h("span",{},S.length?S.length+"″ each":"—")),
+    h("li",{},h("span",{},"Receiving"),h("span",{},S.method==="pickup"?"Pickup — Baltimore":S.method==="delivery"?"Delivery":"—")));
+  const total = h("div",{class:"sum-total"},h("span",{},"Bundle subtotal"),h("strong",{id:"sumAmt"},money(c.sub)));
+  const extra = h("div",{class:"sum-extra"});
+  if (S.method==="pickup" && c.sub!=null){ extra.append(h("div",{},h("span",{},"Pickup deposit (credited)"),h("span",{},"− "+money(c.deposit))), h("div",{},h("span",{},"Balance after deposit"),h("strong",{},money(c.balance)))); }
+  if (S.method==="delivery"){ extra.append(h("div",{},h("span",{},"Delivery fee"),h("span",{}, c.fee!=null?money(c.fee)+" (est.)":"To be confirmed"))); if (c.est!=null) extra.append(h("div",{},h("span",{},"Estimated total"),h("strong",{},money(c.est)))); }
+  const note = h("p",{class:"sum-note"},"No payment is taken online. We'll confirm availability, receiving details and payment instructions after reviewing your request.");
+  return [ul,total,extra,note];
+}
+let lastSub = null;
+function renderSummary(){
+  const body = $("#summaryBody"); body.textContent=""; body.append(...summaryNodes());
+  const mb = $("#mobileSumBody"); mb.textContent=""; mb.append(...summaryNodes()); mb.querySelectorAll("[id]").forEach(n=>n.removeAttribute("id"));
+  const c = calc(); $("#mobileSumTotal").textContent = money(c.sub);
+  if (c.sub!==lastSub && lastSub!==undefined && !reduceMotion){ const a=$("#sumAmt"); a.classList.remove("bump"); void a.offsetWidth; a.classList.add("bump"); }
+  lastSub = c.sub;
+}
+$("#mobileSum > button").addEventListener("click",e=>{const m=$("#mobileSum"); const o=m.classList.toggle("open"); e.currentTarget.setAttribute("aria-expanded",o);});
+
+function stepValid(i, show){
+  let ok = true; const panel = $(`.step[data-step="${i}"]`); const err = $(".step-err",panel);
+  const mark = (id,bad) => { const el=$("#"+id); if(!el) return; el.closest(".field").classList.toggle("err",bad&&show); if (bad) ok=false; };
+  if (i===0) ok = !!S.texture && !!CFG.textures.find(t=>t.id===S.texture&&t.available);
+  if (i===1) ok = S.qty===3||S.qty===4;
+  if (i===2) ok = CFG.lengths.includes(S.length) && priceFor(S.qty,S.length)!=null;
+  if (i===3){ ok = S.method==="pickup"||S.method==="delivery";
+    if (S.method==="delivery"){ mark("fStreet",S.street.trim().length<4); mark("fCity",S.city.trim().length<2); mark("fState",!US_STATES.includes(S.state)); mark("fZip",!/^\d{5}(-\d{4})?$/.test(S.zip.trim())); } }
+  if (i===4){ mark("fName",S.name.trim().length<2); mark("fPhone",digits(S.phone).replace(/^1(?=\d{10}$)/,"").length!==10); mark("fEmail",!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(S.email.trim())); }
+  if (err && i!==5) err.classList.toggle("show", !ok && show && !(i===3&&S.method));
+  return ok;
+}
+function firstInvalid(){ for (let i=0;i<5;i++) if (!stepValid(i,false)) return i; return 5; }
+function autoNext(i){ if (step===i && stepValid(i,false) && i<4){ setTimeout(()=>{ if (step===i) goTo(i+1); }, reduceMotion?0:380); } }
+
+function goTo(i, focus=true){
+  step = i; maxStep = Math.max(maxStep, i);
+  $$(".step").forEach(s => s.classList.toggle("active", +s.dataset.step===i));
+  $$("#acts button").forEach((b,j)=>{ b.setAttribute("aria-current", j===i?"step":"false"); b.classList.toggle("done", j<i || (j!==i && stepValid(j,false) && j<=maxStep)); b.disabled = !!submitted || j>maxStep; });
+  $("#backBtn").disabled = i===0;
+  $("#stepNav").style.display = i===6 ? "none" : "";
+  $("#nextLabel").textContent = i===5 ? "Submit my order request" : "Continue";
+  if (i===5) renderReview();
+  if (focus){ const top = $("#acts").getBoundingClientRect().top + scrollY - 80; if (Math.abs(scrollY-top)>160) scrollTo({top, behavior: reduceMotion?"auto":"smooth"}); }
+}
+function update(rerender=true){ if (rerender) renderOptions(); else renderMethodDetailIfNeeded(); renderSummary(); goTo(step,false); }
+function renderMethodDetailIfNeeded(){ /* keeps typed address fields intact */ }
+
+function addressLine(o){ return [o.street, o.unit, [o.city, o.state].filter(Boolean).join(", "), o.zip].filter(x=>x&&String(x).trim()).join(", "); }
+function reviewRows(o, editable){
+  const c = { sub:o.subtotal, deposit:o.pickupDeposit, balance:o.balanceAfterDeposit };
+  const rows = [
+    ["Hair texture", o.textureName, 0], ["Bundles", o.quantity+" bundles", 1], ["Length", o.length+"″ each", 2],
+    ["Bundle subtotal", money(o.subtotal), 2],
+    ["Receiving", o.method==="pickup"?"Pickup — Baltimore, MD":"Delivery", 3]];
+  if (o.method==="pickup"){ rows.push(["Pickup deposit", money(o.pickupDeposit)+" (credited toward total)",3]); rows.push(["Balance after deposit", money(o.balanceAfterDeposit),3]); }
+  else { rows.push(["Delivery address", addressLine(o.address||{}),3]); rows.push(["Delivery fee", o.deliveryFee!=null? money(o.deliveryFee)+" — estimate, confirmed on review" : "To be confirmed after review",3]); }
+  rows.push(["Name", o.name,4],["Phone", o.phone,4],["Email", o.email,4]);
+  if (o.notes) rows.push(["Notes", o.notes,4]);
+  return rows.map(([k,v,s]) => h("div",{class:"review__row"}, h("dt",{},k), h("dd",{},v), editable? h("button",{type:"button",onclick:()=>goTo(s),"aria-label":"Edit "+k},"Edit") : h("span")));
+}
+function currentOrder(){
+  const c = calc();
+  return {
+    textureId:S.texture, textureName:texName(S.texture), quantity:S.qty, length:S.length,
+    subtotal:c.sub, method:S.method,
+    pickupDeposit: S.method==="pickup"?CFG.pickupDeposit:null,
+    balanceAfterDeposit: S.method==="pickup"?c.balance:null,
+    deliveryFee: S.method==="delivery"&&deliveryFeeKnown()?CFG.deliveryFee:null,
+    address: S.method==="delivery"? {street:S.street.trim(),unit:S.unit.trim(),city:S.city.trim(),state:S.state,zip:S.zip.trim()} : null,
+    name:S.name.trim(), phone:S.phone.trim(), email:S.email.trim(), notes:S.notes.trim()
+  };
+}
+function renderReview(){ const dl=$("#reviewList"); dl.textContent=""; dl.append(...reviewRows(currentOrder(), true)); $("#submitErr").classList.remove("show"); }
+
+function makeRef(){
+  const d = new Date(); const ymd = String(d.getFullYear()).slice(2)+String(d.getMonth()+1).padStart(2,"0")+String(d.getDate()).padStart(2,"0");
+  const A="ABCDEFGHJKMNPQRSTUVWXYZ23456789"; const r=crypto.getRandomValues(new Uint32Array(5)); let s=""; r.forEach(x=>s+=A[x%A.length]);
+  return "PLB-"+ymd+"-"+s;
+}
+function orderText(o, ref){
+  const lines = ["Hi PL BUNDLES! I'd like to place an order request.", ""];
+  if (ref) lines.push("Reference: "+ref);
+  lines.push(`Texture: ${o.textureName}`, `Bundles: ${o.quantity} x ${o.length}"`, `Bundle subtotal: ${money(o.subtotal)}`);
+  if (o.method==="pickup") lines.push(`Receiving: Pickup — Baltimore, MD (${money(o.pickupDeposit)} deposit, balance ${money(o.balanceAfterDeposit)})`);
+  else lines.push("Receiving: Delivery", "Address: "+addressLine(o.address||{}));
+  lines.push(`Name: ${o.name}`, `Phone: ${o.phone}`, `Email: ${o.email}`);
+  if (o.notes) lines.push("Notes: "+o.notes);
+  return lines.join("\n");
+}
+
+$("#backBtn").addEventListener("click",()=>{ if (step>0) goTo(step-1); });
+$("#orderForm").addEventListener("submit", async e => {
+  e.preventDefault();
+  if (step<5){
+    if (!stepValid(step,true)){ const bad=$(`.step[data-step="${step}"] .field.err input, .step[data-step="${step}"] .field.err select`); bad?.focus(); return; }
+    goTo(step+1); return;
+  }
+  // Final submit — validate everything
+  for (let i=0;i<5;i++){ if (!stepValid(i,true)){ goTo(i); return; } }
+  await submitOrder();
+});
+
+async function submitOrder(){
+  const btn = $("#nextBtn"); btn.disabled = true; $("#nextLabel").textContent="Submitting…";
+  const o = currentOrder(); const ref = makeRef();
+  const doc = { ...o, reference:ref, createdAt:new Date().toISOString(), source:"website" };
+  let saved=false, reason="";
+  try {
+    const db = await dbP;
+    if (!db){ reason="no-db"; }
+    else {
+      const u = await userP; let id = null; try { id = u ? await u.id() : null; } catch(_){}
+      if (!id) reason = "no-db";
+      else {
+        doc.submittedBy = id;
+        // Each customer's requests live in their own private record: orders/<their id>
+        const ref0 = db.doc("orders/"+id); const snap = await ref0.get();
+        if (snap.exists) await ref0.update({ requests:{ [ref]:doc }, updatedAt:doc.createdAt });
+        else await ref0.set({ requests:{ [ref]:doc }, updatedAt:doc.createdAt });
+        saved = true;
+      }
+    }
+  } catch(err){ reason = err?.code || "error"; }
+  btn.disabled=false; $("#nextLabel").textContent="Submit my order request";
+  if (saved) showConfirmation(doc); else showFallback(o, reason);
+}
+function showConfirmation(doc){
+  submitted = doc;
+  const r = $("#resultStep"); r.textContent="";
+  r.append(h("div",{class:"confirm"},
+    h("div",{class:"confirm__ticket","aria-hidden":"true"},"✦ Admit one · Good hair ✦"),
+    h("h3",{},"YOU'RE ON THE LIST!"),
+    h("p",{},"Your PL BUNDLES order request has been received!"),
+    h("p",{},"Our team will review your selections and contact you to confirm availability, receiving details, and payment instructions."),
+    h("p",{},"Thank you for shopping the PL BUNDLES FUNHOUSE!"),
+    h("div",{class:"ref"},"Order Reference: ",doc.reference),
+    h("dl",{class:"review"}, ...reviewRows(doc,false)),
+    h("button",{type:"button",class:"ticket",onclick:resetBuilder},h("span",{class:"ticket__face"},"Back to the Funhouse"))));
+  goTo(6); r.focus({preventScroll:true});
+}
+function showFallback(o, reason){
+  const r = $("#resultStep"); r.textContent="";
+  const txt = orderText(o, null);
+  const status = h("span",{role:"status",style:"font-size:14px"});
+  r.append(h("div",{class:"fallback"},
+    h("span",{class:"eyebrow"},"Almost there"),
+    h("h3",{},"Your request wasn't saved online"),
+    h("p",{}, reason==="no-db"
+      ? "Online order saving isn't available on this visit, so nothing has been submitted yet. You can still place your request by text — we've written the message for you."
+      : "Something went wrong saving your request, so nothing has been submitted yet. Please try again, or send it by text — we've written the message for you."),
+    h("pre",{},txt),
+    h("div",{class:"row"},
+      h("a",{class:"ticket",href:smsHref(txt)},h("span",{class:"ticket__face"},"Text my order request")),
+      h("button",{type:"button",class:"btn-line btn-line--dark",onclick:async()=>{try{await navigator.clipboard.writeText(txt);status.textContent="Copied — paste it into a text to "+CFG.phone+"."}catch(_){status.textContent="Couldn't copy automatically — select the text above."}}},"Copy details"),
+      reason!=="no-db"? h("button",{type:"button",class:"btn-line btn-line--dark",onclick:()=>goTo(5)},"Try again") : null),
+    h("p",{style:"margin-top:16px"},"Text: ",h("strong",{},CFG.phone)," ", status),
+    h("p",{style:"margin-top:8px"},h("button",{type:"button",class:"back",style:"background:none;border:0;padding:0;cursor:pointer;text-decoration:underline",onclick:()=>goTo(5)},"← Back to review"))));
+  goTo(6); r.focus({preventScroll:true});
+}
+function resetBuilder(){
+  Object.assign(S,{texture:null,qty:null,length:null,method:null,name:"",phone:"",email:"",notes:"",street:"",unit:"",city:"",state:"MD",zip:""});
+  ["fName","fPhone","fEmail","fNotes"].forEach(id=>$("#"+id).value="");
+  submitted=null; maxStep=0; step=0; update(); goTo(0,false);
+  document.getElementById("home").scrollIntoView({behavior:reduceMotion?"auto":"smooth"});
+}
+
+/* ---------- Deal cards (shop section) ---------- */
+function renderDeals(){
+  const wrap = $("#dealCards"); wrap.textContent="";
+  [3,4].forEach(n => {
+    let chosenTex = null;
+    const chips = h("div",{class:"deal__tex",role:"group","aria-label":"Texture for "+n+" bundle deal"});
+    CFG.textures.filter(t=>t.available).forEach(t => { const c = h("button",{type:"button",class:"chip","aria-pressed":"false",onclick:()=>{ chosenTex = chosenTex===t.id?null:t.id; $$(".chip",chips).forEach(x=>x.setAttribute("aria-pressed", x.dataset.id===chosenTex)); }, "data-id":t.id}, t.name); chips.append(c); });
+    const go = len => { S.qty=n; if (len) S.length=len; else if (S.length && priceFor(n,S.length)==null) S.length=null; if (chosenTex) S.texture=chosenTex; maxStep=Math.max(maxStep, firstInvalid()); update(); goTo(firstInvalid()); };
+    const prices = h("ul",{class:"deal__prices"});
+    CFG.lengths.forEach(l => prices.append(h("li",{}, h("button",{type:"button",onclick:()=>go(l),"aria-label":`${n} bundles, ${l} inches, ${money(priceFor(n,l))} — select`}, h("b",{},l+"″"), h("span",{},money(priceFor(n,l)))))));
+    wrap.append(h("article",{class:"deal reveal in"},
+      h("div",{class:"deal__qty","aria-hidden":"true"}, String(n)),
+      h("h3",{class:"deal__name"}, n+" BUNDLE DEALS"),
+      h("div",{class:"deal__len"},"Lengths 20″ – 30″ · one length per deal"),
+      h("p",{class:"deal__from"},"from",h("strong",{},money(fromPrice(n)))),
+      prices,
+      h("div",{class:"deal__tex-label"},"Texture"), chips,
+      h("button",{type:"button",class:"ticket",onclick:()=>go(null)}, h("span",{class:"ticket__face"},"Select options"))));
+  });
+}
+
+/* ---------- About / policies / contact text ---------- */
+function renderContent(){
+  const ab = $("#aboutText"); ab.textContent=""; CFG.about.split(/\n{2,}/).forEach(p=>ab.append(h("p",{},p)));
+  $$("[data-phone]").forEach(e=>e.textContent=CFG.phone);
+  $$("[data-tel]").forEach(e=>e.href=telHref());
+  $("#smsBtn").href = smsHref("Hi PL BUNDLES! I'm interested in placing a bundle order.");
+  $("#footPay").textContent = "Pay by: "+CFG.paymentMethods.join(", ");
+  const tbc = () => h("p",{class:"tbc"},`Details to be confirmed. Text ${CFG.phone} with any questions.`);
+  const para = t => t && t.trim() ? t.split(/\n{2,}/).map(x=>h("p",{},x)) : [tbc()];
+  const pol = [
+    ["How to Order", [h("p",{},"Submit an order request through this website: choose your texture (Natural Wavy, PLB V-Wavy or MC Burmese), a 3- or 4-bundle deal, your length from 20″ to 30″, and pickup or delivery."), h("p",{},"You don't pay online. PL BUNDLES reviews every request and contacts you to confirm availability, receiving details and payment instructions.")]],
+    ["Baltimore Pickup", [h("p",{},"Pickup is available in Baltimore, Maryland. "+CFG.pickupNote), h("p",{},`Pickup requires a ${money(CFG.pickupDeposit)} deposit, credited toward your order balance.`)]],
+    ["Delivery", [h("p",{},CFG.deliveryNote), deliveryFeeKnown()? h("p",{},"Current delivery fee: "+money(CFG.deliveryFee)+", confirmed when your request is reviewed.") : null]],
+    ["Deposit Policy", [h("p",{},`Pickup orders require a ${money(CFG.pickupDeposit)} deposit. The deposit is deducted from your order total — it is not an additional charge.`), h("p",{},`Example: 3 bundles at 20″ is ${money(priceFor(3,20))}. With the ${money(CFG.pickupDeposit)} deposit, the remaining balance is ${money(priceFor(3,20)-CFG.pickupDeposit)}.`)]],
+    ["Payment Methods", [h("p",{},"Payments are not taken on this website. Accepted payment methods:"), h("ul",{},...CFG.paymentMethods.map(m=>h("li",{},m))), h("p",{},"Payment instructions are confirmed after your order request is reviewed.")]],
+    ["Processing Times", para(CFG.policies.processing)],
+    ["Cancellations", para(CFG.policies.cancellations)],
+    ["Returns and Exchanges", para(CFG.policies.returns)],
+    ["Contact Information", [h("p",{},"Call or text: ",h("a",{href:telHref()},CFG.phone)), h("p",{},"Or use the contact form below.")]]
+  ];
+  const acc = $("#policyAcc"); const open = new Set($$("details[open] summary",acc).map(s=>s.textContent)); acc.textContent="";
+  pol.forEach(([t,body]) => acc.append(h("details",{open:open.has(t)}, h("summary",{},t), h("div",{class:"acc__body"},...body))));
+}
+
+/* ---------- Contact form ---------- */
+$("#inqForm").addEventListener("submit", async e => {
+  e.preventDefault();
+  const v = id => $("#"+id).value.trim(); let ok=true;
+  [["iName",v("iName").length>=2],["iPhone",v("iPhone").length>=5],["iMsg",v("iMsg").length>=2]].forEach(([id,good])=>{ $("#"+id).closest(".field").classList.toggle("err",!good); if(!good) ok=false; });
+  if (!ok) return;
+  const st = $("#inqStatus"); const btn=$("#inqBtn"); btn.disabled=true; st.className="form-status"; st.textContent="Sending…";
+  const data = { name:v("iName"), contact:v("iPhone"), topic:$("#iType").value, reference:v("iRef"), message:v("iMsg"), createdAt:new Date().toISOString() };
+  let saved=false;
+  try { const db = await dbP; const u = await userP; const id = u ? await u.id() : null;
+    if (db && id){ const mid = "m"+Date.now().toString(36)+Math.random().toString(36).slice(2,6); data.id = mid;
+      const r = db.doc("inquiries/"+id); const sn = await r.get();
+      if (sn.exists) await r.update({ messages:{ [mid]:data } }); else await r.set({ messages:{ [mid]:data } }); saved=true; } } catch(_){}
+  btn.disabled=false;
+  if (saved){ st.className="form-status ok"; st.textContent="Message received — we'll be in touch soon."; e.target.reset(); }
+  else {
+    const body = `Hi PL BUNDLES! ${data.topic}${data.reference?" ("+data.reference+")":""}: ${data.message} — ${data.name}, ${data.contact}`;
+    st.textContent=""; st.append("Messages can't be saved online on this visit, so nothing was sent. ", h("a",{href:smsHref(body),style:"color:var(--gold)"},"Text it to "+CFG.phone+" instead"), ".");
+  }
+});
+
+/* =========================================================
+   OWNER DASHBOARD
+   ========================================================= */
+let adminUnsub = [], ORDERS = [], RAW_ORDERS = [], ADMIN_STATE = {}, INQS = [], INQ_HANDLED = {}, adminTab = "orders", openRows = new Set();
+function mergeOrders(){
+  ORDERS = RAW_ORDERS.map(o => { const a = ADMIN_STATE[o.reference]||{}; return { ...o, id:o.reference, status:a.status||"New Request", ownerNotes:a.ownerNotes||"", paid:!!a.paid }; })
+    .sort((a,b)=>String(b.createdAt).localeCompare(String(a.createdAt)));
+  if ($("#admin").classList.contains("open") && adminTab==="orders") renderAdminTab();
+}
+async function openAdmin(){
+  const a = $("#admin"); a.classList.add("open"); document.documentElement.style.overflow="hidden";
+  if (location.hash!=="#owner") history.replaceState(null,"","#owner");
+  const body = $("#adminBody"); body.textContent=""; body.append(h("p",{class:"sub"},"Checking access…"));
+  const [db,u] = await Promise.all([dbP,userP]);
+  let isAdmin=false; try { isAdmin = !!(u && (u.isOwner() || u.canEdit())); } catch(_){}
+  body.textContent="";
+  if (!db || !isAdmin){
+    body.append(h("h2",{},"Owner access only"), h("p",{class:"sub"},"This dashboard is only for the PL BUNDLES owner. Sign in to Claude with the account that owns this site to view order requests and edit settings."),
+      h("button",{class:"btn-solid",type:"button",onclick:closeAdmin},"Back to site"));
+    return;
+  }
+  renderAdminShell();
+  if (!adminUnsub.length){
+    const loadTimer = setTimeout(()=>{ const m=$("#adminLoad"); if(m) m.textContent="Still waiting for the database — data may be out of date."; },10000);
+    adminUnsub.push(db.collection("orders").limit(1000).onSnapshot(s=>{ clearTimeout(loadTimer); RAW_ORDERS=[];
+      s.docs.forEach(d=>{ const r=(d.data()||{}).requests||{}; Object.values(r).forEach(o=>{ if(o&&o.reference) RAW_ORDERS.push(o); }); });
+      mergeOrders(); }, err=>{ clearTimeout(loadTimer); adminError("Couldn't load orders ("+err.code+")."); }));
+    adminUnsub.push(db.collection("orderAdmin").limit(1000).onSnapshot(s=>{ ADMIN_STATE={}; s.docs.forEach(d=>ADMIN_STATE[d.id]=d.data()); mergeOrders(); }, ()=>{}));
+    adminUnsub.push(db.collection("inquiries").limit(1000).onSnapshot(s=>{ INQS=[]; s.docs.forEach(d=>Object.values((d.data()||{}).messages||{}).forEach(m=>m&&INQS.push(m))); INQS.sort((a,b)=>String(b.createdAt).localeCompare(String(a.createdAt))); if(adminTab==="inq") renderAdminTab(); }, ()=>{}));
+    adminUnsub.push(db.doc("admin/inquiryState").onSnapshot(s=>{ INQ_HANDLED=(s.exists&&s.data().handled)||{}; if(adminTab==="inq") renderAdminTab(); }, ()=>{}));
+  }
+}
+function closeAdmin(){ $("#admin").classList.remove("open"); document.documentElement.style.overflow=""; if (location.hash==="#owner") history.replaceState(null,"","#home"); }
+function adminError(t){ const b=$("#adminTabBody"); if(b){ b.prepend(h("div",{class:"admin-msg err"},t)); } }
+function renderAdminShell(){
+  const body = $("#adminBody"); body.textContent="";
+  const tabs = h("div",{class:"tabs",role:"tablist"});
+  [["orders","Order requests"],["inq","Messages"],["settings","Prices & settings"]].forEach(([k,l])=>tabs.append(h("button",{type:"button",role:"tab","aria-selected":adminTab===k?"true":"false",onclick:()=>{adminTab=k;renderAdminShell();}},l)));
+  body.append(tabs, h("div",{id:"adminTabBody"}, h("p",{class:"sub",id:"adminLoad"},"Loading…")));
+  renderAdminTab();
+}
+const badgeCls = s => s==="New Request"?"new":s==="Completed"?"done":s==="Cancelled"?"cxl":"";
+let fStatus="all", fMethod="all", fSearch="";
+function renderAdminTab(){
+  const b = $("#adminTabBody"); if (!b) return; b.textContent="";
+  if (adminTab==="orders"){
+    const count = s => ORDERS.filter(o=>o.status===s).length;
+    b.append(h("h2",{},"Order requests"), h("p",{class:"sub"},"Every request submitted on the website. Customer details are visible only to you."));
+    b.append(h("div",{class:"stats"},
+      h("div",{class:"stat"},h("b",{},ORDERS.length),h("span",{},"Total requests")),
+      h("div",{class:"stat"},h("b",{},count("New Request")),h("span",{},"New")),
+      h("div",{class:"stat"},h("b",{},ORDERS.filter(o=>o.method==="pickup"&&!["Completed","Cancelled"].includes(o.status)).length),h("span",{},"Open pickups")),
+      h("div",{class:"stat"},h("b",{},ORDERS.filter(o=>o.method==="delivery"&&!["Completed","Cancelled"].includes(o.status)).length),h("span",{},"Open deliveries"))));
+    const sSel = h("select",{id:"flS"}, h("option",{value:"all"},"All statuses"), ...STATUSES.map(s=>h("option",{value:s,selected:fStatus===s},s)));
+    const mSel = h("select",{id:"flM"}, h("option",{value:"all"},"Pickup & delivery"), h("option",{value:"pickup",selected:fMethod==="pickup"},"Baltimore pickup"), h("option",{value:"delivery",selected:fMethod==="delivery"},"Delivery"));
+    const q = h("input",{id:"flQ",placeholder:"Name, phone or reference",value:fSearch});
+    sSel.onchange=()=>{fStatus=sSel.value;renderList()}; mSel.onchange=()=>{fMethod=mSel.value;renderList()}; q.oninput=()=>{fSearch=q.value;renderList()};
+    b.append(h("div",{class:"filters"}, h("div",{class:"field"},h("label",{for:"flS"},"Status"),sSel), h("div",{class:"field"},h("label",{for:"flM"},"Receiving"),mSel), h("div",{class:"field",style:"flex:1"},h("label",{for:"flQ"},"Search"),q)));
+    const list = h("div",{class:"olist",id:"olist"}); b.append(list); renderList();
+  } else if (adminTab==="inq"){
+    b.append(h("h2",{},"Messages"), h("p",{class:"sub"},"Questions sent from the contact form."));
+    if (!INQS.length) { b.append(h("div",{class:"empty"},"No messages yet.")); return; }
+    INQS.forEach(m => { const done = !!INQ_HANDLED[m.id]; b.append(h("div",{class:"panel"},
+      h("h3",{},(m.topic||"Message")+(m.reference?" · "+m.reference:"")),
+      h("p",{class:"hint"}, new Date(m.createdAt).toLocaleString()," · ",m.name||"", " · ", m.contact||""),
+      h("p",{style:"white-space:pre-wrap;margin:0 0 14px"}, m.message||""),
+      h("label",{class:"toggle"}, h("input",{type:"checkbox",checked:done,onchange:async e=>{ try{ const db=await dbP; await db.doc("admin/inquiryState").set({handled:{...INQ_HANDLED,[m.id]:e.target.checked}}); }catch(_){ e.target.checked=!e.target.checked; } }}), "Handled")));
+    });
+  } else renderSettings(b);
+}
+function renderList(){
+  const list = $("#olist"); if (!list) return; list.textContent="";
+  const s = fSearch.trim().toLowerCase();
+  const rows = ORDERS.filter(o => (fStatus==="all"||o.status===fStatus) && (fMethod==="all"||o.method===fMethod) && (!s || [o.reference,o.name,o.phone,o.email].some(x=>String(x||"").toLowerCase().includes(s))));
+  if (!rows.length){ list.append(h("div",{class:"empty"}, ORDERS.length?"No requests match these filters.":"No order requests yet. They'll appear here the moment a customer submits one.")); return; }
+  rows.forEach(o => list.append(orderRow(o)));
+}
+function orderRow(o){
+  const row = h("div",{class:"orow"+(openRows.has(o.id)?" open":"")});
+  const head = h("button",{type:"button","aria-expanded":openRows.has(o.id)?"true":"false",onclick:()=>{ const op=row.classList.toggle("open"); head.setAttribute("aria-expanded",op); op?openRows.add(o.id):openRows.delete(o.id); }},
+    h("div",{}, h("div",{class:"ref"},o.reference||o.id), h("small",{}, o.createdAt?new Date(o.createdAt).toLocaleString([], {month:"short",day:"numeric",hour:"numeric",minute:"2-digit"}):"")),
+    h("div",{}, String(o.name||""), h("small",{}, String(o.phone||""))),
+    h("div",{}, `${o.quantity||"?"} × ${o.length||"?"}″ · ${o.textureName||""}`, h("small",{}, "Subtotal "+money(o.subtotal))),
+    h("div",{}, h("span",{class:"badge "+(o.method==="pickup"?"pick":"del")}, o.method==="pickup"?"Pickup":"Delivery")),
+    h("div",{}, h("span",{class:"badge "+badgeCls(o.status)}, o.status||"New Request")),
+    h("span",{class:"chev","aria-hidden":"true"},"▾"));
+  const kv = (pairs) => h("dl",{class:"kv"}, ...pairs.filter(p=>p[1]!=null&&p[1]!=="").flatMap(([k,v])=>[h("dt",{},k),h("dd",{},v)]));
+  const left = h("div",{},
+    h("h3",{style:"font:600 12px var(--sans);letter-spacing:.2em;text-transform:uppercase;margin:0 0 10px"},"Customer"),
+    kv([["Name",String(o.name||"")],["Phone",String(o.phone||"")],["Email",String(o.email||"")],["Notes",String(o.notes||"")]]),
+    h("p",{style:"display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 22px"},
+      h("a",{class:"btn-line btn-line--dark",style:"min-height:40px;padding:0 16px",href:"sms:+1"+digits(o.phone).slice(-10)},"Text"),
+      h("a",{class:"btn-line btn-line--dark",style:"min-height:40px;padding:0 16px",href:"tel:+1"+digits(o.phone).slice(-10)},"Call"),
+      o.email? h("a",{class:"btn-line btn-line--dark",style:"min-height:40px;padding:0 16px",href:"mailto:"+String(o.email)},"Email"):null),
+    h("h3",{style:"font:600 12px var(--sans);letter-spacing:.2em;text-transform:uppercase;margin:0 0 10px"},"Order"),
+    kv([["Texture",String(o.textureName||"")],["Deal",`${o.quantity} bundles × ${o.length}″`],["Subtotal",money(o.subtotal)],
+        ["Receiving",o.method==="pickup"?"Pickup — Baltimore, MD":"Delivery"],
+        ["Deposit",o.method==="pickup"?money(o.pickupDeposit)+" (credited)":null],["Balance",o.method==="pickup"?money(o.balanceAfterDeposit):null],
+        ["Address",o.method==="delivery"?addressLine(o.address||{}):null],["Delivery fee",o.method==="delivery"?(o.deliveryFee!=null?money(o.deliveryFee)+" (shown to customer)":"Not yet confirmed"):null]]));
+  const sel = h("select",{}, ...STATUSES.map(s=>h("option",{value:s,selected:(o.status||"New Request")===s},s)));
+  const notes = h("textarea",{placeholder:"Private notes — only you can see these",maxlength:"3000"}); notes.value = o.ownerNotes||"";
+  const paid = h("input",{type:"checkbox",checked:!!o.paid});
+  const msg = h("span",{role:"status",style:"font-size:14px;color:#6b625a;margin-left:12px"});
+  const save = h("button",{type:"button",class:"btn-solid",onclick:async()=>{ save.disabled=true; msg.textContent="Saving…";
+    try{ const db=await dbP; await db.doc("orderAdmin/"+o.reference).set({status:sel.value, ownerNotes:notes.value, paid:paid.checked, updatedAt:new Date().toISOString()}); msg.textContent="Saved."; }
+    catch(e){ msg.textContent="Couldn't save ("+(e?.code||"error")+")."; } save.disabled=false; }},"Save changes");
+  const right = h("div",{},
+    h("div",{class:"field"},h("label",{},"Status"),sel),
+    h("label",{class:"toggle",style:"margin-top:10px"},paid,"Payment received (you mark this manually)"),
+    h("div",{class:"field",style:"margin-top:12px"},h("label",{},"Private notes"),notes),
+    h("div",{style:"margin-top:14px"},save,msg));
+  row.append(head, h("div",{class:"orow__detail"},left,right));
+  return row;
+}
+function renderSettings(b){
+  b.append(h("h2",{},"Prices & settings"), h("p",{class:"sub"},"Changes here update the live website for every visitor as soon as you save."));
+  const P = h("div",{class:"panel"}, h("h3",{},"Bundle deal prices"), h("p",{class:"hint"},"Price for the whole deal at each length."));
+  const t = h("table",{class:"ptable"}, h("thead",{},h("tr",{},h("th",{},"Length"),h("th",{},"3 Bundles"),h("th",{},"4 Bundles"))));
+  const tb = h("tbody"); const pin = {};
+  CFG.lengths.forEach(l => { const r=h("tr",{},h("td",{},l+"″")); ["3","4"].forEach(q=>{ const i=h("input",{type:"number",min:"1",step:"1",value:priceFor(+q,l),"aria-label":`${q} bundles ${l} inch price`}); pin[q+"-"+l]=i; r.append(h("td",{},"$ ",i)); }); tb.append(r); });
+  t.append(tb); P.append(t);
+  const T = h("div",{class:"panel"}, h("h3",{},"Texture availability"), h("p",{class:"hint"},"Unavailable textures stay visible but can't be selected."));
+  const tin = {}; CFG.textures.forEach(x=>{ const c=h("input",{type:"checkbox",checked:x.available}); tin[x.id]=c; T.append(h("label",{class:"toggle"},c,x.name)); });
+  const F = h("div",{class:"panel"}, h("h3",{},"Fulfillment"));
+  const dep = h("input",{type:"number",min:"0",step:"1",value:CFG.pickupDeposit});
+  const fee = h("input",{type:"number",min:"0",step:"0.01",value:deliveryFeeKnown()?CFG.deliveryFee:"",placeholder:"Leave blank = to be confirmed"});
+  const pn = h("textarea",{}); pn.value=CFG.pickupNote; const dn=h("textarea",{}); dn.value=CFG.deliveryNote;
+  F.append(h("div",{class:"fields"},
+    h("div",{class:"field"},h("label",{},"Pickup deposit ($)"),dep),
+    h("div",{class:"field"},h("label",{},"Delivery fee ($)"),fee),
+    h("div",{class:"field full"},h("label",{},"Pickup message"),pn),
+    h("div",{class:"field full"},h("label",{},"Delivery message"),dn)));
+  const Y = h("div",{class:"panel"}, h("h3",{},"Payment methods"), h("p",{class:"hint"},"One per line. Shown in policies and the footer. Never add card numbers or passwords here."));
+  const pm = h("textarea",{}); pm.value=CFG.paymentMethods.join("\n"); Y.append(h("div",{class:"field"},pm));
+  const C = h("div",{class:"panel"}, h("h3",{},"Website copy & policies"), h("p",{class:"hint"},"Leave a policy blank and the site shows “Details to be confirmed”. Separate paragraphs with a blank line."));
+  const about=h("textarea",{style:"min-height:150px"}); about.value=CFG.about;
+  const pr=h("textarea",{}); pr.value=CFG.policies.processing; const cx=h("textarea",{}); cx.value=CFG.policies.cancellations; const rt=h("textarea",{}); rt.value=CFG.policies.returns;
+  C.append(h("div",{class:"fields"},
+    h("div",{class:"field full"},h("label",{},"About — More than just a show"),about),
+    h("div",{class:"field full"},h("label",{},"Processing times"),pr),
+    h("div",{class:"field full"},h("label",{},"Cancellations"),cx),
+    h("div",{class:"field full"},h("label",{},"Returns and exchanges"),rt)));
+  const msg = h("span",{role:"status",style:"margin-left:14px;font-size:15px"});
+  const save = h("button",{type:"button",class:"btn-solid",onclick:async()=>{
+    const prices={"3":{},"4":{}}; for (const k in pin){ const [q,l]=k.split("-"); const v=Number(pin[k].value); if(!(isFinite(v)&&v>0)){ msg.textContent=`Check the ${q}-bundle ${l}″ price.`; pin[k].focus(); return; } prices[q][l]=v; }
+    const d=Number(dep.value); if(!(isFinite(d)&&d>=0)){ msg.textContent="Check the pickup deposit."; return; }
+    const fv = fee.value.trim()===""?null:Number(fee.value); if(fv!==null&&!(isFinite(fv)&&fv>=0)){ msg.textContent="Check the delivery fee."; return; }
+    const data = { prices, textures:CFG.textures.map(x=>({id:x.id,name:x.name,available:tin[x.id].checked})), pickupDeposit:d, deliveryFee:fv,
+      pickupNote:pn.value.trim(), deliveryNote:dn.value.trim(), paymentMethods:pm.value.split("\n").map(x=>x.trim()).filter(Boolean),
+      about:about.value.trim(), policies:{processing:pr.value.trim(),cancellations:cx.value.trim(),returns:rt.value.trim()}, updatedAt:new Date().toISOString() };
+    save.disabled=true; msg.textContent="Saving…";
+    try{ const db=await dbP; await db.doc("config/site").set(data); msg.textContent="Saved — the website is updated."; }catch(e){ msg.textContent="Couldn't save ("+(e?.code||"error")+")."; }
+    save.disabled=false; }},"Save settings");
+  b.append(P,T,F,Y,C,h("div",{style:"position:sticky;bottom:0;background:#f3eee5;padding:16px 0;border-top:1px solid #d9cdb8"},save,msg));
+}
+$("#ownerLink").addEventListener("click", openAdmin);
+$("#adminClose").addEventListener("click", closeAdmin);
+document.addEventListener("keydown", e=>{ if (e.key==="Escape" && $("#admin").classList.contains("open")) closeAdmin(); });
+window.addEventListener("hashchange", ()=>{ if (location.hash==="#owner") openAdmin(); });
+
+/* =========================================================
+   INIT
+   ========================================================= */
+function renderAll(){ renderDeals(); renderOptions(); renderSummary(); renderContent(); }
+$("#year").textContent = new Date().getFullYear();
+buildActs(); renderAll(); goTo(0,false);
+if (location.hash==="#owner") openAdmin();
+// Live config from the database (owner edits), falling back to defaults
+dbP.then(db => {
+  if (!db) return;
+  try {
+    db.doc("config/site").onSnapshot(snap => {
+      CFG = mergeConfig(snap.exists ? snap.data() : null);
+      if (S.texture && !CFG.textures.find(t=>t.id===S.texture&&t.available)) S.texture=null;
+      if (!submitted){ renderAll(); goTo(step,false); } else { renderDeals(); renderContent(); }
+      if ($("#admin").classList.contains("open") && adminTab!=="settings") renderAdminTab();
+    }, ()=>{});
+  } catch(_){}
+});
+</script>
+</body>
+</html>
